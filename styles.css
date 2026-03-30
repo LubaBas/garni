@@ -175,10 +175,16 @@ h3 {
 }
 
 h1 {
-  max-width: 11ch;
+  max-width: 13ch;
   color: #fff8f1;
-  font-size: clamp(3.4rem, 8vw, 6.6rem);
-  line-height: 0.96;
+  font-size: clamp(2.25rem, 4.7vw, 4rem);
+  line-height: 1.08;
+}
+
+.hero__name {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0 8px 24px rgba(31, 18, 11, 0.28);
 }
 
 h2 {
@@ -298,25 +304,6 @@ p {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 34px;
-}
-
-.hero__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.hero__meta span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 0 16px;
-  border: 1px solid rgba(255, 248, 241, 0.24);
-  border-radius: 999px;
-  color: rgba(255, 244, 230, 0.88);
-  background: rgba(255, 255, 255, 0.06);
-  font-size: 0.9rem;
 }
 
 .section-heading,
@@ -516,10 +503,6 @@ p {
   }
 
   .hero__actions {
-    flex-direction: column;
-  }
-
-  .hero__meta {
     flex-direction: column;
   }
 
