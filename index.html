@@ -3,364 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ира в Ереване | Экскурсии по Еревану и Армении</title>
+    <title>Экскурсии по Армении с Ириной Алексеевой</title>
     <meta
       name="description"
-      content="Индивидуальные экскурсии по Еревану и Армении с гидом Ириной: прогулки по городу, авторские маршруты и поездки за пределы столицы."
+      content="Авторские экскурсии и туры по Армении с гидом Ириной Алексеевой: прогулки по Еревану и поездки в самые красивые локации страны."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Prata&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="container header-inner">
-          <a class="brand" href="#hero">
-            <span class="brand-mark">IR</span>
-            <span class="brand-text">
-              <strong>Ира в Ереване</strong>
-              <small>Экскурсии по Еревану и Армении</small>
-            </span>
-          </a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#hero" aria-label="На главную">
+          <span class="brand__mark">IA</span>
+          <span class="brand__text">
+            <strong>Irina Alekseeva</strong>
+            <span>Yerevan Guide</span>
+          </span>
+        </a>
 
-          <nav class="site-nav" aria-label="Основная навигация">
-            <a href="#about">Обо мне</a>
-            <a href="#offers">Экскурсии</a>
-            <a href="#unique">Уникальность</a>
-            <a href="#contact">Контакты</a>
-          </nav>
-
-          <a class="button button-primary header-cta" href="https://t.me/username" target="_blank" rel="noreferrer">
-            Заказать
-          </a>
-        </div>
+        <nav class="topbar__nav" aria-label="Навигация по странице">
+          <a href="#about">Обо мне</a>
+          <a href="#tours">Экскурсии</a>
+          <a href="#contact">Запись</a>
+        </nav>
       </header>
 
       <main>
-        <section class="hero" id="hero">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <span class="eyebrow">Авторские прогулки и индивидуальные маршруты</span>
-              <h1>Покажу Ереван и Армению так, чтобы вы почувствовали их изнутри.</h1>
-              <p class="hero-lead">
-                Меня зовут Ира. Я провожу экскурсии по Еревану и Армении для тех, кто хочет
-                не просто увидеть достопримечательности, а понять характер города, его ритм,
-                архитектуру, людей и контрасты.
-              </p>
+        <section class="hero hero--cover" id="hero">
+          <div class="hero__backdrop"></div>
+          <div class="hero__panel surface-card" data-reveal>
+            <p class="eyebrow eyebrow--light">
+              Авторские экскурсии и туры по Армении
+            </p>
+            <h1>Армения - страна, которая вас удивит</h1>
+            <p class="hero__lead hero__lead--light">
+              Пешеходные прогулки по Еревану и выездные экскурсии в самые
+              красивые локации Армении с экскурсоводом Ириной Алексеевой.
+            </p>
 
-              <div class="hero-actions">
-                <a class="button button-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                  Заказать экскурсию в Telegram
-                </a>
-                <a class="button button-secondary" href="#offers">Смотреть предложения</a>
-              </div>
-
-              <ul class="hero-highlights" aria-label="Преимущества">
-                <li>4 готовых предложения и индивидуальные маршруты</li>
-                <li>Для тех, кто впервые в Армении и кто хочет увидеть больше</li>
-                <li>Живой рассказ без сухой лекции и шаблонного сценария</li>
-              </ul>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#tours"
+                >Смотреть экскурсии</a
+              >
+              <a class="button button--ghost button--ghost-light" href="#about"
+                >Обо мне</a
+              >
             </div>
 
-            <div class="hero-visual">
-              <div class="hero-photo-card">
+            <div class="hero__meta">
+              <span>Ереван</span>
+              <span>индивидуальные маршруты</span>
+              <span>атмосфера путешествия</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="about__intro" data-reveal>
+            <p class="eyebrow">Обо мне</p>
+            <h2>Провожу экскурсии так, чтобы Армения становилась ближе, живее и понятнее.</h2>
+          </div>
+
+          <div class="about__layout">
+            <div class="about__text" data-reveal>
+              <p>
+                Всем горячий армянский барев! Я Ира Алексеева -
+                профессиональный гид и выпускница образовательной программы
+                проекта «Глазами инженера». Несколько лет назад я переехала в
+                Армению, и с тех пор не перестаю открывать для себя эту страну
+                с невероятно богатой историей и культурой.
+              </p>
+              <p>
+                На своих экскурсиях я рассказываю удивительные и нескучные
+                истории, знакомлю гостей с природными красотами, от которых
+                захватывает дух, и архитектурными памятниками - свидетелями
+                того, о чем вы могли читать в книгах.
+              </p>
+              <p>
+                Уникальность моих экскурсий - это еще и свежий взгляд, я
+                обращаю внимание на детали, которые местным жителям порой
+                кажутся обыденностью. Для меня же это - ключики к пониманию
+                Армении и армянской культуры, которыми я с удовольствием делюсь
+                со своими гостями.
+              </p>
+            </div>
+
+            <aside class="about__media" data-reveal>
+              <div class="about-card">
+                <div class="about-card__photo-frame">
+                  <img
+                    src="assets/guide.png"
+                    alt="Ирина Алексеева, гид по Еревану и Армении"
+                    class="about-card__photo"
+                  />
+                </div>
+                <div class="about-card__body">
+                  <h3>Ирина Алексеева</h3>
+                  <p>
+                    Профессиональный гид по Еревану и Армении с вниманием к
+                    архитектуре, культуре, природе и ритму путешествия.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section tours" id="tours">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Экскурсии</p>
+            <h2>Маршруты, где впечатление складывается из истории, дороги и красоты места.</h2>
+          </div>
+
+          <div class="tour-grid">
+            <article class="tour-card" data-reveal>
+              <div class="tour-card__content">
+                <p class="tour-card__eyebrow">Пешеходная экскурсия</p>
+                <h3>Ереван: город из туфа, дворов и живых историй</h3>
+                <p>
+                  Неспешная прогулка по Еревану для тех, кто хочет почувствовать
+                  характер города, услышать нескучные истории и заметить детали,
+                  из которых складывается его атмосфера.
+                </p>
+              </div>
+
+              <div class="tour-gallery">
                 <img
-                  src="assets/ira-guide.png"
-                  alt="Ирина, гид по Еревану и Армении"
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Ararat%20and%20the%20Yerevan%20skyline%20in%20spring%20(50mm).jpg"
+                  alt="Вид на Ереван и Арарат"
                 />
-                <div class="hero-photo-note">
-                  <strong>Ира</strong>
-                  <span>Ваш гид по Еревану и Армении</span>
-                </div>
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan,%20Art,%20Yerevan%20Cascade,%20Armenia.jpg"
+                  alt="Каскад в Ереване"
+                />
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan_Armenia.jpg"
+                  alt="Городской вид Еревана"
+                />
               </div>
-            </div>
-          </div>
-        </section>
+            </article>
 
-        <section class="about section" id="about">
-          <div class="container section-grid">
-            <div class="section-title-block">
-              <span class="eyebrow">Обо мне</span>
-              <h2>Свежий взгляд человека, который успел по-настоящему влюбиться в город.</h2>
-            </div>
-
-            <div class="about-content">
-              <p>
-                Меня зовут Ира. Я выпускница Школы гида проекта «Глазами инженера».
-                Родилась и выросла в Москве и всем сердцем люблю этот город, где несколько лет назад
-                и началась новая страница моей жизни в роли экскурсовода.
-              </p>
-              <p>
-                Но жизнь не стоит на месте, и сейчас в моем сердце поселилась новая любовь — к
-                горячему южному Еревану. Наше первое знакомство случилось 5 лет назад, и это не была
-                любовь с первого взгляда. Но стоило присмотреться друг к другу поближе и начать жить
-                вместе, чтобы узнать его получше.
-              </p>
-              <p>
-                Благодаря общению с ереванцами, изучению армянского языка и исследованию литературы
-                по армянской истории, архитектуре и традициям у меня сложился объемный образ города
-                изнутри. И при этом мне удалось не потерять тот свежий взгляд понаехавшей, которым и я
-                когда-то впервые посмотрела на Ереван.
-              </p>
-              <p class="about-accent">
-                Один из старейших, но всегда молодой, строптивый, но такой радушный Ереван всегда рад
-                гостям. А я буду рада показать вам его во всем его многообразии и контрастах.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section unique" id="unique">
-          <div class="container">
-            <div class="section-heading">
-              <span class="eyebrow">Уникальность</span>
-              <h2>Почему со мной Ереван раскрывается глубже и теплее.</h2>
-            </div>
-
-            <div class="feature-grid">
-              <article class="feature-card">
-                <h3>Город изнутри и снаружи</h3>
+            <article class="tour-card" data-reveal>
+              <div class="tour-card__content">
+                <p class="tour-card__eyebrow">Выездная экскурсия</p>
+                <h3>Гарни и Гегард: камень, ущелья и древняя Армения</h3>
                 <p>
-                  Я смотрю на Ереван одновременно глазами жителя и внимательного гостя. Поэтому
-                  показываю не только открытки, но и настоящий городской характер.
+                  Один из самых красивых маршрутов рядом с Ереваном: античный
+                  храм Гарни, монастырь Гегард и ландшафт, в котором история и
+                  природа звучат особенно сильно.
                 </p>
-              </article>
-
-              <article class="feature-card">
-                <h3>Архитектура, история и контекст</h3>
-                <p>
-                  В экскурсиях соединяются детали городской среды, исторические сюжеты, литература,
-                  местные привычки и разговор о том, как живет Ереван сегодня.
-                </p>
-              </article>
-
-              <article class="feature-card">
-                <h3>Маршрут под вас</h3>
-                <p>
-                  Можно выбрать готовую экскурсию или собрать индивидуальную прогулку под ваши
-                  интересы: архитектура, городские истории, виды, гастрономия или поездки за город.
-                </p>
-              </article>
-
-              <article class="feature-card">
-                <h3>Без формальности</h3>
-                <p>
-                  Это не монотонная лекция, а живой диалог, в котором есть место впечатлению,
-                  вопросам, паузам, атмосферным точкам и вашему темпу.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section offers" id="offers">
-          <div class="container">
-            <div class="section-heading">
-              <span class="eyebrow">Предложения</span>
-              <h2>4 экскурсии, с которых можно начать знакомство с Ереваном и Арменией.</h2>
-            </div>
-
-            <div class="offers-grid">
-              <article class="offer-card">
-                <div class="offer-gallery" aria-label="Галерея экскурсии">
-                  <div class="gallery-placeholder gallery-warm">Фото маршрута</div>
-                  <div class="gallery-placeholder gallery-stone">Городские детали</div>
-                  <div class="gallery-placeholder gallery-green">Атмосфера прогулки</div>
-                </div>
-
-                <div class="offer-body">
-                  <div class="offer-heading">
-                    <span class="offer-tag">Флагманская экскурсия</span>
-                    <h3>Знакомство с Ереваном: истории, архитектура и городской характер</h3>
-                  </div>
-
-                  <p>
-                    Авторская прогулка для первого знакомства с городом или для тех, кто хочет
-                    увидеть Ереван не поверхностно, а почувствовать его ритм, контрасты и атмосферу.
-                  </p>
-
-                  <ul class="offer-details">
-                    <li>Формат: индивидуальная пешеходная экскурсия</li>
-                    <li>Подходит: для первого визита, пары, друзей, семьи</li>
-                    <li>Акцент: архитектура, история, местные наблюдения и живой городской контекст</li>
-                  </ul>
-
-                  <div class="offer-actions">
-                    <a class="button button-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                      Заказать в Telegram
-                    </a>
-                    <a class="text-link" href="https://experience.tripster.ru/experience/76707/" target="_blank" rel="noreferrer">
-                      Подробнее на Tripster
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-gallery" aria-label="Галерея экскурсии">
-                  <div class="gallery-placeholder gallery-clay">Старые дворики</div>
-                  <div class="gallery-placeholder gallery-sunset">Модернизм</div>
-                  <div class="gallery-placeholder gallery-rose">Площадь и свет</div>
-                </div>
-
-                <div class="offer-body">
-                  <div class="offer-heading">
-                    <span class="offer-tag">Городской маршрут</span>
-                    <h3>Контрасты Еревана: от двориков до модернизма</h3>
-                  </div>
-
-                  <p>
-                    Маршрут о том, как в одном городе уживаются старые слои памяти, советская
-                    архитектура, новые пространства и повседневная жизнь ереванцев.
-                  </p>
-
-                  <ul class="offer-details">
-                    <li>Формат: прогулка по городу</li>
-                    <li>Подходит: тем, кто уже видел центр и хочет смотреть глубже</li>
-                    <li>Акцент: дворы, фасады, детали, неожиданные истории и ритм современного Еревана</li>
-                  </ul>
-
-                  <div class="offer-actions">
-                    <a class="button button-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                      Заказать в Telegram
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-gallery" aria-label="Галерея экскурсии">
-                  <div class="gallery-placeholder gallery-stone">Гарни</div>
-                  <div class="gallery-placeholder gallery-green">Гегард</div>
-                  <div class="gallery-placeholder gallery-warm">Ущелье и виды</div>
-                </div>
-
-                <div class="offer-body">
-                  <div class="offer-heading">
-                    <span class="offer-tag">За пределами столицы</span>
-                    <h3>Однодневная поездка: Гарни, Гегард и природные виды Армении</h3>
-                  </div>
-
-                  <p>
-                    Неспешный маршрут для тех, кто хочет выехать из города и увидеть Армению через
-                    древние памятники, пейзажи, камень, свет и разговор о стране в более широком
-                    контексте.
-                  </p>
-
-                  <ul class="offer-details">
-                    <li>Формат: индивидуальная поездка</li>
-                    <li>Подходит: для первого путешествия по Армении</li>
-                    <li>Акцент: история, природный ландшафт и ощущение масштаба страны</li>
-                  </ul>
-
-                  <div class="offer-actions">
-                    <a class="button button-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                      Заказать в Telegram
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-gallery" aria-label="Галерея экскурсии">
-                  <div class="gallery-placeholder gallery-sunset">Ваш маршрут</div>
-                  <div class="gallery-placeholder gallery-green">Любимые места</div>
-                  <div class="gallery-placeholder gallery-clay">Под ваш темп</div>
-                </div>
-
-                <div class="offer-body">
-                  <div class="offer-heading">
-                    <span class="offer-tag">Индивидуальный формат</span>
-                    <h3>Персональная экскурсия по Еревану и Армении</h3>
-                  </div>
-
-                  <p>
-                    Если вам хочется особенного маршрута, можно собрать программу под ваши интересы:
-                    от первого знакомства с Ереваном до тематической прогулки или выезда по Армении.
-                  </p>
-
-                  <ul class="offer-details">
-                    <li>Формат: маршрут по запросу</li>
-                    <li>Подходит: тем, кто ценит гибкость и индивидуальный подход</li>
-                    <li>Акцент: ваши интересы, ваш ритм, ваша глубина знакомства со страной</li>
-                  </ul>
-
-                  <div class="offer-actions">
-                    <a class="button button-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                      Обсудить маршрут
-                    </a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section process">
-          <div class="container process-box">
-            <div>
-              <span class="eyebrow">Как заказать</span>
-              <h2>Напишите в Telegram, и мы подберем формат экскурсии под ваш запрос.</h2>
-            </div>
-
-            <div class="process-steps" aria-label="Шаги заказа">
-              <div class="process-step">
-                <strong>1</strong>
-                <p>Напишите желаемые даты, количество человек и интересы.</p>
               </div>
-              <div class="process-step">
-                <strong>2</strong>
-                <p>Я предложу подходящий маршрут или помогу собрать индивидуальную программу.</p>
+
+              <div class="tour-gallery">
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20Temple,%20Garni,%20Armenia.jpg"
+                  alt="Храм Гарни"
+                />
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Geghard%20Monastery,%20Geghard,%20Armenia.jpg"
+                  alt="Монастырь Гегард"
+                />
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20-%20Armenia%20(2910555306).jpg"
+                  alt="Пейзаж в районе Гарни"
+                />
               </div>
-              <div class="process-step">
-                <strong>3</strong>
-                <p>Согласуем детали и встретимся в Ереване или отправимся в путешествие по Армении.</p>
+            </article>
+
+            <article class="tour-card" data-reveal>
+              <div class="tour-card__content">
+                <p class="tour-card__eyebrow">Дальний маршрут</p>
+                <h3>Севан и Дилижан: озеро, воздух и зелёная Армения</h3>
+                <p>
+                  Для тех, кто хочет увидеть другую сторону страны: прозрачный
+                  свет Севана, монастыри над водой, дороги через горы и мягкую,
+                  лесную атмосферу Дилижана.
+                </p>
               </div>
-            </div>
+
+              <div class="tour-gallery">
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Sevanavank%20view.JPG"
+                  alt="Вид на Севанаванк"
+                />
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Sevan.jpg"
+                  alt="Озеро Севан"
+                />
+                <img
+                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Tufenkian%20Old%20Dilijan%20Complex.jpg"
+                  alt="Старый Дилижан"
+                />
+              </div>
+            </article>
           </div>
         </section>
 
         <section class="section contact" id="contact">
-          <div class="container contact-grid">
-            <div class="contact-copy">
-              <span class="eyebrow">Контакты и соцсети</span>
-              <h2>Открыта к новым знакомствам, маршрутам и вашим идеям для путешествия.</h2>
+          <div class="contact__panel" data-reveal>
+            <p class="eyebrow">Запись на экскурсию</p>
+            <h2>Если хотите увидеть Армению не формально, а по-настоящему, давайте соберем маршрут.</h2>
               <p>
-                Напишите мне в Telegram, чтобы обсудить экскурсию, даты и формат. Ниже я также
-                оставила блок для ваших соцсетей, чтобы сайт можно было использовать как полноценную
-                визитку.
-              </p>
-            </div>
-
-            <div class="contact-card">
-              <a class="social-link social-primary" href="https://t.me/username" target="_blank" rel="noreferrer">
-                Telegram
-                <span>@username</span>
-              </a>
-              <a class="social-link" href="https://instagram.com/username" target="_blank" rel="noreferrer">
-                Instagram
-                <span>@username</span>
-              </a>
-              <a class="social-link" href="https://www.facebook.com/username" target="_blank" rel="noreferrer">
-                Facebook
-                <span>страница гида</span>
-              </a>
-            </div>
+              Напишите удобным способом, и этот лендинг легко дополнится вашими
+              реальными контактами, мессенджерами и подробностями по каждому
+              маршруту.
+            </p>
+            <a class="button button--primary" href="mailto:hello@example.com"
+              >Обсудить маршрут</a
+            >
           </div>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <div class="container footer-inner">
-          <p>Ира в Ереване. Индивидуальные экскурсии по Еревану и Армении.</p>
-          <a href="https://t.me/username" target="_blank" rel="noreferrer">Связаться в Telegram</a>
-        </div>
-      </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
