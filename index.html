@@ -41,10 +41,10 @@
             <p class="eyebrow eyebrow--light">
               Авторские экскурсии и туры по Армении
             </p>
-            <h1>
+            <h1 class="hero__title">
               <span class="hero__name">Ирина Алексеева</span>
               <span class="hero__role"
-                >- ваш гид
+                >ваш гид
                 <span class="hero__place">по Еревану и Армении</span></span
               >
             </h1>
@@ -98,17 +98,14 @@
               <div class="about-card">
                 <div class="about-card__photo-frame">
                   <img
-                    src="assets/guide.png"
+                    src="file:///C:/Users/lubab/.cursor/projects/c-repos-garni/assets/c__Users_lubab_AppData_Roaming_Cursor_User_workspaceStorage_d7ef347520b2bee10fbc1724d5724ee6_images_photo_2026-03-31_19-04-11-8f63e297-6824-4919-96f1-8e2085831a29.png"
                     alt="Ирина Алексеева, гид по Еревану и Армении"
                     class="about-card__photo"
                   />
                 </div>
                 <div class="about-card__body">
                   <h3>Ирина Алексеева</h3>
-                  <p>
-                    Профессиональный гид по Еревану и Армении с вниманием к
-                    архитектуре, культуре, природе и ритму путешествия.
-                  </p>
+                  <p>Профессиональный гид по Еревану и Армении</p>
                 </div>
               </div>
             </aside>
@@ -122,31 +119,114 @@
           </div>
 
           <div class="tour-grid">
-            <article class="tour-card" data-reveal>
+            <article class="tour-card tour-card--with-details" data-reveal>
               <div class="tour-card__content">
                 <p class="tour-card__eyebrow">Пешеходная экскурсия</p>
-                <h3>Ереван: город из туфа, дворов и живых историй</h3>
+                <h3>Эй, джан, Ереван - столица всех армян</h3>
                 <p>
-                  Неспешная прогулка по Еревану для тех, кто хочет почувствовать
-                  характер города, услышать нескучные истории и заметить детали,
-                  из которых складывается его атмосфера.
+                  Обзорная прогулка по Еревану, чтобы ближе познакомиться с
+                  одним из древнейших городов мира, который скрывает свой
+                  истинный возраст под застройкой советского периода.
                 </p>
+                <div class="tour-card__actions">
+                  <a class="button button--primary" href="#contact">Заказать</a>
+                </div>
               </div>
 
-              <div class="tour-gallery">
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Ararat%20and%20the%20Yerevan%20skyline%20in%20spring%20(50mm).jpg"
-                  alt="Вид на Ереван и Арарат"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan,%20Art,%20Yerevan%20Cascade,%20Armenia.jpg"
-                  alt="Каскад в Ереване"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan_Armenia.jpg"
-                  alt="Городской вид Еревана"
-                />
+              <div class="tour-gallery" data-carousel>
+                <div class="tour-gallery__viewport">
+                  <div class="tour-gallery__track">
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Ararat%20and%20the%20Yerevan%20skyline%20in%20spring%20(50mm).jpg"
+                      alt="Вид на Ереван и Арарат"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan,%20Art,%20Yerevan%20Cascade,%20Armenia.jpg"
+                      alt="Каскад в Ереване"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Yerevan_Armenia.jpg"
+                      alt="Городской вид Еревана"
+                    />
+                  </div>
+                </div>
+                <div class="tour-gallery__controls">
+                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
+                    ←
+                  </button>
+                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
+                    →
+                  </button>
+                </div>
               </div>
+
+              <details class="tour-details">
+                <summary>Подробнее об экскурсии</summary>
+
+                <div class="tour-details__content">
+                  <div class="tour-details__section">
+                    <h4>Что вас ждет на экскурсии:</h4>
+                    <ul>
+                      <li>
+                        Посмотрим главные достопримечательности центральной
+                        части города: Каскад, Площадь свободы, Площадь
+                        республики
+                      </li>
+                      <li>Познакомимся с современным искусством на Каскаде</li>
+                      <li>
+                        Прогуляемся по паркам и скверам города, у каждого из
+                        которых своя история
+                      </li>
+                      <li>Увидим кусочек Франции в Ереване</li>
+                      <li>
+                        Узнаем историю старейшей церкви города, которая
+                        пережила монгольское завоевание и советский период
+                      </li>
+                      <li>
+                        Заглянем в чудом сохранившийся кусочек старого Еревана,
+                        преобразившийся в арт-кластер
+                      </li>
+                      <li>
+                        Насладимся дореволюционной застройкой улицы Абовяна
+                      </li>
+                      <li>Погрузимся в историю города и его жителей</li>
+                      <li>
+                        Узнаем как Ереван стал столицей мирового армянства
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tour-details__section">
+                    <h4>Кому подойдет экскурсия:</h4>
+                    <p>
+                      Тем, кто впервые в столице Армении и даже тем, кто уже
+                      бывал в Ереване, чтобы посмотреть на город с нового
+                      ракурса и узнать его поближе.
+                    </p>
+                  </div>
+
+                  <div class="tour-details__section">
+                    <h4>Организационные детали:</h4>
+                    <p>Продолжительность маршрута: ~ 3,5 ч</p>
+                    <p>
+                      Маршрут полностью пешеходный, по желанию можем сделать
+                      остановку в кафе.
+                    </p>
+                    <p>
+                      Чтобы чувствовать себя комфортно, одевайтесь по погоде.
+                      Летом потребуется головной убор и солнцезащитный крем.
+                    </p>
+                  </div>
+
+                  <div class="tour-details__section">
+                    <h4>Стоимость:</h4>
+                    <p>Для групп 1-4 человека - 30 000 драм (70 евро)</p>
+                    <p>
+                      От 4 человек — дополнительно 5 000 драм/чел (12 евро)
+                    </p>
+                  </div>
+                </div>
+              </details>
             </article>
 
             <article class="tour-card" data-reveal>
@@ -158,21 +238,36 @@
                   храм Гарни, монастырь Гегард и ландшафт, в котором история и
                   природа звучат особенно сильно.
                 </p>
+                <div class="tour-card__actions">
+                  <a class="button button--primary" href="#contact">Заказать</a>
+                </div>
               </div>
 
-              <div class="tour-gallery">
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20Temple,%20Garni,%20Armenia.jpg"
-                  alt="Храм Гарни"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Geghard%20Monastery,%20Geghard,%20Armenia.jpg"
-                  alt="Монастырь Гегард"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20-%20Armenia%20(2910555306).jpg"
-                  alt="Пейзаж в районе Гарни"
-                />
+              <div class="tour-gallery" data-carousel>
+                <div class="tour-gallery__viewport">
+                  <div class="tour-gallery__track">
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20Temple,%20Garni,%20Armenia.jpg"
+                      alt="Храм Гарни"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Geghard%20Monastery,%20Geghard,%20Armenia.jpg"
+                      alt="Монастырь Гегард"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Garni%20-%20Armenia%20(2910555306).jpg"
+                      alt="Пейзаж в районе Гарни"
+                    />
+                  </div>
+                </div>
+                <div class="tour-gallery__controls">
+                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
+                    ←
+                  </button>
+                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
+                    →
+                  </button>
+                </div>
               </div>
             </article>
 
@@ -185,21 +280,36 @@
                   свет Севана, монастыри над водой, дороги через горы и мягкую,
                   лесную атмосферу Дилижана.
                 </p>
+                <div class="tour-card__actions">
+                  <a class="button button--primary" href="#contact">Заказать</a>
+                </div>
               </div>
 
-              <div class="tour-gallery">
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Sevanavank%20view.JPG"
-                  alt="Вид на Севанаванк"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Sevan.jpg"
-                  alt="Озеро Севан"
-                />
-                <img
-                  src="https://commons.wikimedia.org/wiki/Special:FilePath/Tufenkian%20Old%20Dilijan%20Complex.jpg"
-                  alt="Старый Дилижан"
-                />
+              <div class="tour-gallery" data-carousel>
+                <div class="tour-gallery__viewport">
+                  <div class="tour-gallery__track">
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Sevanavank%20view.JPG"
+                      alt="Вид на Севанаванк"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Sevan.jpg"
+                      alt="Озеро Севан"
+                    />
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Tufenkian%20Old%20Dilijan%20Complex.jpg"
+                      alt="Старый Дилижан"
+                    />
+                  </div>
+                </div>
+                <div class="tour-gallery__controls">
+                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
+                    ←
+                  </button>
+                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
+                    →
+                  </button>
+                </div>
               </div>
             </article>
           </div>
