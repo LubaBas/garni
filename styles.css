@@ -182,9 +182,19 @@ h1 {
 }
 
 .hero__name {
-  display: inline-block;
+  display: block;
+  margin-bottom: 0.38em;
   color: #fff;
   text-shadow: 0 8px 24px rgba(31, 18, 11, 0.28);
+}
+
+.hero__role {
+  display: block;
+  font-size: 0.78em;
+}
+
+.hero__place {
+  white-space: nowrap;
 }
 
 h2 {
@@ -254,7 +264,7 @@ p {
   overflow: hidden;
   background:
     linear-gradient(180deg, rgba(34, 24, 18, 0.08) 0%, rgba(34, 24, 18, 0.28) 36%, rgba(34, 24, 18, 0.66) 100%),
-    url("assets/hero.png") center center / cover no-repeat;
+    url("file:///C:/Users/lubab/.cursor/projects/c-repos-garni/assets/c__Users_lubab_AppData_Roaming_Cursor_User_workspaceStorage_d7ef347520b2bee10fbc1724d5724ee6_images_Mount_Ararat_and_the_Yerevan_skyline_in_spring__50mm_-c085aa48-20ee-477b-8260-ee269b264747.png") center center / cover no-repeat;
   box-shadow: 0 28px 90px rgba(61, 39, 23, 0.16);
 }
 
@@ -271,8 +281,10 @@ p {
   z-index: 1;
   max-width: 760px;
   padding: 34px;
-  background: rgba(71, 42, 25, 0.22);
-  border-color: rgba(255, 255, 255, 0.18);
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .hero__panel::after,
@@ -287,6 +299,10 @@ p {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(227, 181, 110, 0.18), transparent 68%);
   pointer-events: none;
+}
+
+.hero__panel::after {
+  display: none;
 }
 
 .hero__lead {
