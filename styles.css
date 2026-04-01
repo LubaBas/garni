@@ -29,26 +29,19 @@ img {
 
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #275b8f, #6f96c8);
+  background-color: #275b8f;
+  background: url("./images/hero-yerevan.png") center center/cover no-repeat;
   color: #fff;
   padding: 80px 0 70px;
   overflow: hidden;
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("file:///C:/Users/lubab/.cursor/projects/c-repos-garni/assets/c__Users_lubab_AppData_Roaming_Cursor_User_workspaceStorage_d7ef347520b2bee10fbc1724d5724ee6_images_yerevan-ararat-957fd7b3-7626-4240-b463-6a4c2a3392e8.png")
-    center center/cover no-repeat;
-  opacity: 0.88;
+  content: none;
 }
 
 .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, rgba(106, 58, 28, 0.6), rgba(201, 132, 73, 0.28));
+  content: none;
 }
 
 .hero .container {
