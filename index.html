@@ -1,337 +1,824 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Экскурсии по Армении с Ириной Алексеевой</title>
-    <meta
-      name="description"
-      content="Авторские экскурсии и туры по Армении с гидом Ириной Алексеевой: прогулки по Еревану и поездки в самые красивые локации страны."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=Prata&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Любовь — гид по Тбилиси</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="icon" href="images/favicon/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <a class="brand" href="#hero" aria-label="На главную">
-          <span class="brand__mark">IA</span>
-          <span class="brand__text">
-            <strong>Irina Alekseeva</strong>
-            <span>Yerevan Guide</span>
-          </span>
-        </a>
-
-        <nav class="topbar__nav" aria-label="Навигация по странице">
-          <a href="#about">Обо мне</a>
-          <a href="#tours">Экскурсии</a>
-          <a href="#contact">Запись</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero hero--cover" id="hero">
-          <div class="hero__backdrop"></div>
-          <div class="hero__panel surface-card" data-reveal>
-            <p class="eyebrow eyebrow--light">
-              Авторские экскурсии и туры по Армении
-            </p>
-            <h1 class="hero__title">
-              <span class="hero__name">Ирина Алексеева</span>
-              <span class="hero__role"
-                >ваш гид
-                <span class="hero__place">по Еревану и Армении</span></span
-              >
-            </h1>
-            <p class="hero__lead hero__lead--light">
-              Пешеходные прогулки по Еревану и выездные экскурсии в самые
-              красивые локации Армении с экскурсоводом Ириной Алексеевой.
-            </p>
-
-            <div class="hero__actions">
-              <a class="button button--primary" href="#tours"
-                >Смотреть экскурсии</a
-              >
-              <a class="button button--ghost button--ghost-light" href="#about"
-                >Обо мне</a
-              >
-            </div>
-          </div>
-        </section>
-
-        <section class="section about" id="about">
-          <div class="about__intro" data-reveal>
-            <p class="eyebrow">Обо мне</p>
-            <h2>Провожу экскурсии так, чтобы Армения становилась ближе, живее и понятнее.</h2>
-          </div>
-
-          <div class="about__layout">
-            <div class="about__text" data-reveal>
-              <p>
-                Всем горячий армянский барев! Я Ира Алексеева -
-                профессиональный гид и выпускница образовательной программы
-                проекта «Глазами инженера». Несколько лет назад я переехала в
-                Армению, и с тех пор не перестаю открывать для себя эту страну
-                с невероятно богатой историей и культурой.
-              </p>
-              <p>
-                На своих экскурсиях я рассказываю удивительные и нескучные
-                истории, знакомлю гостей с природными красотами, от которых
-                захватывает дух, и архитектурными памятниками - свидетелями
-                того, о чем вы могли читать в книгах.
-              </p>
-              <p>
-                Уникальность моих экскурсий - это еще и свежий взгляд, я
-                обращаю внимание на детали, которые местным жителям порой
-                кажутся обыденностью. Для меня же это - ключики к пониманию
-                Армении и армянской культуры, которыми я с удовольствием делюсь
-                со своими гостями.
-              </p>
-            </div>
-
-            <aside class="about__media" data-reveal>
-              <div class="about-card">
-                <div class="about-card__photo-frame">
-                  <img
-                    src="assets/guide.png"
-                    alt="Ирина Алексеева, гид по Еревану и Армении"
-                    class="about-card__photo"
-                  />
-                </div>
-                <div class="about-card__body">
-                  <h3>Ирина Алексеева</h3>
-                  <p>Профессиональный гид по Еревану и Армении</p>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </section>
-
-        <section class="section tours" id="tours">
-          <div class="section-heading" data-reveal>
-            <p class="eyebrow">Экскурсии</p>
-            <h2>Маршруты, где впечатление складывается из истории, дороги и красоты места.</h2>
-          </div>
-
-          <div class="tour-grid">
-            <article class="tour-card tour-card--with-details" data-reveal>
-              <div class="tour-card__content">
-                <p class="tour-card__eyebrow">Пешеходная экскурсия</p>
-                <h3>Эй, джан, Ереван - столица всех армян</h3>
-                <p>
-                  Обзорная прогулка по Еревану, чтобы ближе познакомиться с
-                  одним из древнейших городов мира, который скрывает свой
-                  истинный возраст под застройкой советского периода.
-                </p>
-                <div class="tour-card__actions">
-                  <a class="button button--primary" href="#contact">Заказать</a>
-                </div>
-              </div>
-
-              <div class="tour-gallery" data-carousel>
-                <div class="tour-gallery__viewport">
-                  <div class="tour-gallery__track">
-                    <img
-                      src="assets/yerevan-ararat.jpg"
-                      alt="Вид на Ереван и Арарат"
-                    />
-                    <img
-                      src="assets/yerevan-cascade.jpg"
-                      alt="Каскад в Ереване"
-                    />
-                    <img
-                      src="assets/hero.png"
-                      alt="Городской вид Еревана"
-                    />
-                  </div>
-                </div>
-                <div class="tour-gallery__controls">
-                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
-                    ←
-                  </button>
-                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
-                    →
-                  </button>
-                </div>
-              </div>
-
-              <details class="tour-details">
-                <summary>Подробнее об экскурсии</summary>
-
-                <div class="tour-details__content">
-                  <div class="tour-details__section">
-                    <h4>Что вас ждет на экскурсии:</h4>
-                    <ul>
-                      <li>
-                        Посмотрим главные достопримечательности центральной
-                        части города: Каскад, Площадь свободы, Площадь
-                        республики
-                      </li>
-                      <li>Познакомимся с современным искусством на Каскаде</li>
-                      <li>
-                        Прогуляемся по паркам и скверам города, у каждого из
-                        которых своя история
-                      </li>
-                      <li>Увидим кусочек Франции в Ереване</li>
-                      <li>
-                        Узнаем историю старейшей церкви города, которая
-                        пережила монгольское завоевание и советский период
-                      </li>
-                      <li>
-                        Заглянем в чудом сохранившийся кусочек старого Еревана,
-                        преобразившийся в арт-кластер
-                      </li>
-                      <li>
-                        Насладимся дореволюционной застройкой улицы Абовяна
-                      </li>
-                      <li>Погрузимся в историю города и его жителей</li>
-                      <li>
-                        Узнаем как Ереван стал столицей мирового армянства
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="tour-details__section">
-                    <h4>Кому подойдет экскурсия:</h4>
-                    <p>
-                      Тем, кто впервые в столице Армении и даже тем, кто уже
-                      бывал в Ереване, чтобы посмотреть на город с нового
-                      ракурса и узнать его поближе.
-                    </p>
-                  </div>
-
-                  <div class="tour-details__section">
-                    <h4>Организационные детали:</h4>
-                    <p>Продолжительность маршрута: ~ 3,5 ч</p>
-                    <p>
-                      Маршрут полностью пешеходный, по желанию можем сделать
-                      остановку в кафе.
-                    </p>
-                    <p>
-                      Чтобы чувствовать себя комфортно, одевайтесь по погоде.
-                      Летом потребуется головной убор и солнцезащитный крем.
-                    </p>
-                  </div>
-
-                  <div class="tour-details__section">
-                    <h4>Стоимость:</h4>
-                    <p>Для групп 1-4 человека - 30 000 драм (70 евро)</p>
-                    <p>
-                      От 4 человек — дополнительно 5 000 драм/чел (12 евро)
-                    </p>
-                  </div>
-                </div>
-              </details>
-            </article>
-
-            <article class="tour-card" data-reveal>
-              <div class="tour-card__content">
-                <p class="tour-card__eyebrow">Выездная экскурсия</p>
-                <h3>Гарни и Гегард: камень, ущелья и древняя Армения</h3>
-                <p>
-                  Один из самых красивых маршрутов рядом с Ереваном: античный
-                  храм Гарни, монастырь Гегард и ландшафт, в котором история и
-                  природа звучат особенно сильно.
-                </p>
-                <div class="tour-card__actions">
-                  <a class="button button--primary" href="#contact">Заказать</a>
-                </div>
-              </div>
-
-              <div class="tour-gallery" data-carousel>
-                <div class="tour-gallery__viewport">
-                  <div class="tour-gallery__track">
-                    <img
-                      src="assets/garni-temple.jpg"
-                      alt="Храм Гарни"
-                    />
-                    <img
-                      src="assets/geghard-monastery.jpg"
-                      alt="Монастырь Гегард"
-                    />
-                    <img
-                      src="assets/garni-landscape.jpg"
-                      alt="Пейзаж в районе Гарни"
-                    />
-                  </div>
-                </div>
-                <div class="tour-gallery__controls">
-                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
-                    ←
-                  </button>
-                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
-                    →
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <article class="tour-card" data-reveal>
-              <div class="tour-card__content">
-                <p class="tour-card__eyebrow">Дальний маршрут</p>
-                <h3>Севан и Дилижан: озеро, воздух и зелёная Армения</h3>
-                <p>
-                  Для тех, кто хочет увидеть другую сторону страны: прозрачный
-                  свет Севана, монастыри над водой, дороги через горы и мягкую,
-                  лесную атмосферу Дилижана.
-                </p>
-                <div class="tour-card__actions">
-                  <a class="button button--primary" href="#contact">Заказать</a>
-                </div>
-              </div>
-
-              <div class="tour-gallery" data-carousel>
-                <div class="tour-gallery__viewport">
-                  <div class="tour-gallery__track">
-                    <img
-                      src="assets/sevanavank.jpg"
-                      alt="Вид на Севанаванк"
-                    />
-                    <img
-                      src="assets/lake-sevan.jpg"
-                      alt="Озеро Севан"
-                    />
-                    <img
-                      src="assets/old-dilijan.jpg"
-                      alt="Старый Дилижан"
-                    />
-                  </div>
-                </div>
-                <div class="tour-gallery__controls">
-                  <button class="tour-gallery__button" type="button" data-carousel-prev aria-label="Предыдущее фото">
-                    ←
-                  </button>
-                  <button class="tour-gallery__button" type="button" data-carousel-next aria-label="Следующее фото">
-                    →
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="section contact" id="contact">
-          <div class="contact__panel" data-reveal>
-            <p class="eyebrow">Запись на экскурсию</p>
-            <h2>Если хотите увидеть Армению не формально, а по-настоящему, давайте соберем маршрут.</h2>
-              <p>
-              Напишите удобным способом, и этот лендинг легко дополнится вашими
-              реальными контактами, мессенджерами и подробностями по каждому
-              маршруту.
-            </p>
-            <a class="button button--primary" href="mailto:hello@example.com"
-              >Обсудить маршрут</a
+    <header class="hero">
+      <div class="container">
+        <div class="hero-top">
+          <p class="eyebrow">Авторские экскурсии по Грузии</p>
+          <div class="hero-contacts">
+            <a href="https://instagram.com/soulmate_travel_georgia" target="_blank" rel="noreferrer"
+              >Instagram</a
+            >
+            <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer"
+              >Telegram</a
             >
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+        <h1>Любовь — гид по Тбилиси</h1>
+        <p class="lead">
+          Архитектура и культура, вписанные в живую природу.
+        </p>
+        <p class="lead">
+          Пешие прогулки и выездные маршруты с душой.
+        </p>
+        <nav class="hero-nav">
+          <a href="#about">Обо мне</a>
+          <a href="#tours">Экскурсии</a>
+          <a href="#unique">Уникальность</a>
+          <a href="#reviews">Отзывы</a>
+        </nav>
+      </div>
+    </header>
 
-    <script src="script.js"></script>
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h2>Обо мне</h2>
+          <div class="about-grid">
+            <div class="about-photo">
+              <img
+                src="images/guide-lyubov.webp"
+                alt="Фото гида Любови"
+              />
+            </div>
+            <div class="text-block">
+            <p>Привет! Я – Любовь, гид по Тбилиси и Грузии.</p>
+            <p>
+              Тбилиси — город сложный и многослойный. За несколько лет жизни здесь я научилась читать его через архитектуру, пространство и детали, которые легко пропустить на первый взгляд. Моя работа опирается на профессиональную подготовку, внимательное отношение и уважение к ритму человека.
+            </p>
+            <p>
+              Моя профессиональная жизнь начиналась в другой сфере. Инженерное образование и предыдущий опыт работы микробиологом связаны с производством. Это развило у меня внимание к процессам и умение замечать детали, что позволяет делать экскурсии осмысленными и насыщенными. Такой подход естественным образом привёл меня к производственной экскурсии на крафтовой пивоварне и интересу к технологиям грузинского виноделия.
+            </p>
+            <p>
+              Экскурсии со мной — это не только знакомство с историей Тбилиси, но и погружение в уникальную атмосферу города, исследование его культуры и архитектуры. Я показываю скрытые уголки и истории, которые делают прогулку неповторимой.
+            </p>
+            <p>
+              Выездные экскурсии за пределами Тбилиси позволяют насладиться потрясающими горными пейзажами, изучить храмы и интересные локации, устроить пикник в душевной атмосфере.
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tours" class="section section-alt">
+        <div class="container">
+          <h2>Описание предложений</h2>
+
+          <article class="card">
+            <div class="tour-main">
+              <div class="tour-cover-carousel">
+                <button type="button" class="carousel-prev" aria-label="Предыдущее фото">‹</button>
+                <div class="carousel-track">
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-01.jpg" alt="Историческая застройка Тбилиси — балконы, канатная дорога" />
+                    <figcaption>Историческая застройка Тбилиси — балконы, канатная дорога</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-08.jpg" alt="Улица Старого города с башней и коваными решётками" />
+                    <figcaption>Улица Старого города с башней и коваными решётками</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-04.jpg" alt="Проспект Руставели и здание Оперного театра" />
+                    <figcaption>Проспект Руставели и здание Оперного театра</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-10.jpg" alt="Башня с часами театра Резо Габриадзе" />
+                    <figcaption>Башня с часами театра Резо Габриадзе</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-14.jpg" alt="Весёлый момент на экскурсии — улица Старого города" />
+                    <figcaption>Весёлый момент на экскурсии — улица Старого города</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-06.jpg" alt="Мост Мира и панорама города" />
+                    <figcaption>Мост Мира и панорама города</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-07.jpg" alt="Здание с классическим наследием — арки, фрески, памятник" />
+                    <figcaption>Здание с классическим наследием — арки, фрески, памятник</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-13.jpg" alt="Храм Метехи и памятник Вахтангу Горгасали" />
+                    <figcaption>Храм Метехи и памятник Вахтангу Горгасали</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-11.jpg" alt="Грузинский храм с куполом под голубым небом" />
+                    <figcaption>Грузинский храм с куполом под голубым небом</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-03.jpg" alt="Роскошные люстры и лестница в старинном здании" />
+                    <figcaption>Роскошные люстры и лестница в старинном здании</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-15.jpg" alt="Улица с деревянными балконами в Старом городе" />
+                    <figcaption>Улица с деревянными балконами в Старом городе</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/tbilisi/tour-tbilisi-02.jpg" alt="Исторический район — голубая баня, арки и мосты" />
+                    <figcaption>Исторический район — голубая баня, арки и мосты</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="carousel-next" aria-label="Следующее фото">›</button>
+              </div>
+              <div class="tour-main-text">
+                <div class="card-header">
+                  <h3>
+                    Вековая палитра Тбилиси:<br>от архитектурных эпох до уличного стиля
+                  </h3>
+                  <p class="card-subtitle">Обзорная прогулка по Тбилиси</p>
+                </div>
+                <p class="card-lead">
+                  Авторская пешая экскурсия, в которой вы увидите не только самые популярные, но и скрытые на первый взгляд места, которые раскрывают душу страны, культуру и понимание ее жителей. Тбилиси — город музей под открытым небом, в котором каждый квартал наполнен историями и искусством.
+                </p>
+              </div>
+            </div>
+            <div class="tour-booking">
+              <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Заказать экскурсию</a>
+            </div>
+            <details class="tour-details">
+              <summary>Подробнее о маршруте и деталях</summary>
+              <div class="card-columns">
+                <div>
+                  <h4>На пути увидим:</h4>
+                  <ul>
+                    <li>Архитектуру проспекта Руставели разных эпох</li>
+                    <li>Академию художеств и Оперный театр</li>
+                    <li>Театр марионеток Резо Габриадзе</li>
+                    <li>Старый город и крепостные стены</li>
+                    <li>Мост Мира и парк Рике</li>
+                    <li>Монумент «Мать Грузия» и панорамы города</li>
+                    <li>Серные бани - место, где зарождался Тбилиси</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Узнаем:</h4>
+                  <ul>
+                    <li>Краткую историю Грузии и легенду основания Тбилиси</li>
+                    <li>Про кого была история из песни «Миллион алых роз»</li>
+                    <li>Историю грузинского алфавита</li>
+                    <li>О Золотом веке и как развивалась Грузия под влиянием разных культур</li>
+                    <li>Архитектурные стили и истории домов по маршруту</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-grid">
+                <div>
+                  <h4>Уникальность, кому подойдет</h4>
+                  <p>
+                    Экскурсия особенно хорошо подойдёт тем, кто в Тбилиси впервые и хочет получить цельное, осмысленное впечатление о городе, а также тем, кто уже бывал здесь, но хочет увидеть Тбилиси с новой, более глубокой стороны.
+                  </p>
+                </div>
+                <div>
+                  <h4>Организационные детали:</h4>
+                  <p>
+                    Длительность: 3,5 ч<br>
+                    Маршрут насыщенный, пеший и с перепадами высот.<br>
+                    Обувайте удобную обувь. В жару берите головной убор, очки и воду.
+                  </p>
+                </div>
+                <div>
+                  <h4>Стоимость:</h4>
+                  <p>
+                    80 лари/чел<br>
+                    (Минимум 2 человека или 160 лари)<br>
+                    от 4 человек — 70 лари/чел
+                  </p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <div class="tour-main">
+              <div class="tour-cover-carousel">
+                <button type="button" class="carousel-prev" aria-label="Предыдущее фото">‹</button>
+                <div class="carousel-track">
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-03.jpg" alt="Улица Мцхеты — собор Светицховели, сувенирные лавки и грузинские флаги" />
+                    <figcaption>Улица Мцхеты — собор Светицховели, сувенирные лавки и грузинские флаги</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-01.jpg" alt="Собор Светицховели за крепостными стенами" />
+                    <figcaption>Собор Светицховели за крепостными стенами</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-02.jpg" alt="Панорама Мцхеты и слияния рек с гор" />
+                    <figcaption>Панорама Мцхеты и слияния рек с гор</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-04.jpg" alt="Мцхета — древняя столица и храмы" />
+                    <figcaption>Мцхета — древняя столица и храмы</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-05.jpg" alt="Слияние Арагви и Куры — вид с высоты" />
+                    <figcaption>Слияние Арагви и Куры — вид с высоты</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-06.jpg" alt="Окрестности Мцхеты и горный пейзаж" />
+                    <figcaption>Окрестности Мцхеты и горный пейзаж</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-07.jpg" alt="Храм Джвари или монастырь в горах" />
+                    <figcaption>Храм Джвари или монастырь в горах</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-08.jpg" alt="Монастырь Шио-Мгвиме и горный хребет" />
+                    <figcaption>Монастырь Шио-Мгвиме и горный хребет</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-09.jpg" alt="Древняя фреска — Гостеприимство Авраама" />
+                    <figcaption>Древняя фреска — Гостеприимство Авраама</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-10.jpg" alt="Интерьер храма или монастыря" />
+                    <figcaption>Интерьер храма или монастыря</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-11.jpg" alt="Средневековая крепость и руины" />
+                    <figcaption>Средневековая крепость и руины</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-12.jpg" alt="Вид на долину и исторические постройки" />
+                    <figcaption>Вид на долину и исторические постройки</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-13.jpg" alt="Пещера-часовня и панорама" />
+                    <figcaption>Пещера-часовня и панорама</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-14.jpg" alt="Пикник на склонах с видом на Мцхету" />
+                    <figcaption>Пикник на склонах с видом на Мцхету</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-15.jpg" alt="Горные тропы и природа вокруг Мцхеты" />
+                    <figcaption>Горные тропы и природа вокруг Мцхеты</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/mtskheta/tour-mtskheta-16.jpg" alt="Раскопки царской резиденции античных времён" />
+                    <figcaption>Раскопки царской резиденции античных времён</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="carousel-next" aria-label="Следующее фото">›</button>
+              </div>
+              <div class="tour-main-text">
+                <div class="card-header">
+                  <h3>
+                    Где сходятся реки и эпохи: путешествие по Мцхете и
+                    окрестностям. Пикник на склонах
+                  </h3>
+                  <p class="card-subtitle">Мцхета</p>
+                </div>
+                <p class="card-lead">
+                  Мцхета — древняя столица Грузии, насчитывающая около 2500 лет
+                  истории. Уютные улочки, великолепные виды и величайшие святыни
+                  грузинского народа. Вокруг Мцхеты сосредоточены архитектурные
+                  и культурные сокровища, а каждый объект окружен живописными
+                  горами.
+                </p>
+              </div>
+            </div>
+            <div class="tour-booking">
+              <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Заказать экскурсию</a>
+            </div>
+            <details class="tour-details">
+              <summary>Подробнее о маршруте и деталях</summary>
+              <div class="card-columns">
+                <div>
+                  <h4>На маршруте увидите:</h4>
+                  <ul>
+                    <li>Храм Джвари VI века и слияние рек Арагви и Куры</li>
+                    <li>Светицховели — главный кафедральный собор</li>
+                    <li>Руины средневековой крепости</li>
+                    <li>Монастырь Шио-Мгвиме, окруженный живописным горным хребтом</li>
+                    <li>Раскопки царской резиденции античных времен</li>
+                    <li>Пещеру-часовню и панорамные виды на Мцхету</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Узнаете:</h4>
+                  <ul>
+                    <li>Как хрупкая девушка Нино принесла новую веру в Грузию</li>
+                    <li>В чем шедевр архитектуры Джвари</li>
+                    <li>Кто такой Шио и как жил в пещере</li>
+                    <li>Устройство средневековой крепости</li>
+                    <li>Кто такой Армази и что было до христианства</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-grid">
+                <div>
+                  <h4>Почему это стоит увидеть</h4>
+                  <p>
+                    Это путь от мифов и язычества к христианству, от древних поселений к архитектурным символам веры. Вокруг — потрясающие виды, горный воздух и тишина для перезагрузки.
+                  </p>
+                </div>
+                <div>
+                  <h4>Организационные детали:</h4>
+                  <p>
+                    Продолжительность: 7 часов<br>
+                    На машине<br>
+                    1–4 человека.<br>
+                    В стоимость включен пикник<br>
+                    Есть возможность менять маршрут под Ваш запрос.
+                  </p>
+                </div>
+                <div>
+                  <h4>Стоимость</h4>
+                  <p>200 $ или 500 лари</p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <div class="tour-main">
+              <div class="tour-cover-carousel">
+                <button type="button" class="carousel-prev" aria-label="Предыдущее фото">‹</button>
+                <div class="carousel-track">
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-01.jpg" alt="Группа на фоне разноцветных холмов Гареджийской пустыни" />
+                    <figcaption>Группа на фоне разноцветных холмов Гареджийской пустыни</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-02.jpg" alt="Разноцветные холмы полупустыни Гареджи" />
+                    <figcaption>Разноцветные холмы полупустыни Гареджи</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-03.jpg" alt="Пещерный монастырь в скалах" />
+                    <figcaption>Пещерный монастырь в скалах</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-05.jpg" alt="Лавра Давид-Гареджа — двор и постройки монастыря" />
+                    <figcaption>Лавра Давид-Гареджа — двор и постройки монастыря</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-06.jpg" alt="Крепостные стены и пещеры лавры" />
+                    <figcaption>Крепостные стены и пещеры лавры</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-07.jpg" alt="«Солёное озеро» и меняющийся ландшафт" />
+                    <figcaption>«Солёное озеро» и меняющийся ландшафт</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-08.jpg" alt="Панорама долины со средневековой крепости" />
+                    <figcaption>Панорама долины со средневековой крепости</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-09.jpg" alt="Монастырь Ниноцминда и руины древнего храма" />
+                    <figcaption>Монастырь Ниноцминда и руины древнего храма</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/david-gareji/tour-david-gareji-10.jpg" alt="Отдых с видом на цветные холмы — идеально для пикника" />
+                    <figcaption>Отдых с видом на цветные холмы — идеально для пикника</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="carousel-next" aria-label="Следующее фото">›</button>
+              </div>
+              <div class="tour-main-text">
+                <div class="card-header">
+                  <h3>
+                    Цветные холмы Гареджийской пустыни. Путешествие к пещерному
+                    монастырю Давид Гареджи
+                  </h3>
+                  <p class="card-subtitle">Давид Гареджи</p>
+                </div>
+                <p class="card-lead">
+                  Автопутешествие-экскурсия к религиозному центру пещерных
+                  монастырей и необычному природному объекту — полупустыне
+                  Гареджи с яркими разноцветными холмами.
+                </p>
+              </div>
+            </div>
+            <div class="tour-booking">
+              <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Заказать экскурсию</a>
+            </div>
+            <details class="tour-details">
+              <summary>Подробнее о маршруте и деталях</summary>
+              <div class="card-columns">
+                <div>
+                  <h4>По пути увидим:</h4>
+                  <ul>
+                    <li>Монастырь Ниноцминда и руины древнего храма</li>
+                    <li>Виды со средневековой крепости на долину</li>
+                    <li>"Соленое озеро" и меняющийся ландшафт</li>
+                    <li>Разноцветные холмы Гареджийской полупустыни</li>
+                    <li>Лавру Давид-Гареджа — комплекс пещерных монастырей VI века</li>
+                    <li>Панорамные виды, идеально для пикника и отдыха от городской суеты</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Узнаем</h4>
+                  <ul>
+                    <li>Историю монастыря Давид-Гареджи</li>
+                    <li>Легенду основателя лавры</li>
+                    <li>О происхождении цветных холмов.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-grid">
+                <div>
+                  <h4>Уникальность</h4>
+                  <p>
+                    Подойдет и для первого визита в Грузию, и для тех, кто уже видел популярные места. Это сочетание природы, архитектуры и древностей, прогулка по холмам и перезагрузка с видами.
+                  </p>
+                </div>
+                <div>
+                  <h4>Организационные моменты:</h4>
+                  <p>
+                    Продолжительность: 7 ч<br>
+                    На машине<br>
+                    В стоимость включен пикник<br>
+                    Нужна нескользящая закрытая обувь, в жару — головной убор, очки и вода.
+                  </p>
+                </div>
+                <div>
+                  <h4>Стоимость:</h4>
+                  <p>200 $ или 500 лари</p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <div class="tour-main">
+              <div class="tour-cover-carousel carousel-3-4">
+                <button type="button" class="carousel-prev" aria-label="Предыдущее фото">‹</button>
+                <div class="carousel-track">
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-01.jpg" alt="Лари — ритуальный напиток из ячменного солода в высокогорной Грузии" />
+                    <figcaption>Лари — ритуальный напиток из ячменного солода в высокогорной Грузии</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-03.jpg" alt="Ячменный солод — сырьё для пива" />
+                    <figcaption>Ячменный солод — сырьё для пива</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-04.jpg" alt="Пиво Megobrebi Brewery в бокале" />
+                    <figcaption>Пиво Megobrebi Brewery в бокале</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-05.jpg" alt="Крафтовое пиво Megobrebi — сорта в банках" />
+                    <figcaption>Крафтовое пиво Megobrebi — сорта в банках</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-06.jpg" alt="Гид рассказывает об оборудовании у бродильных танков" />
+                    <figcaption>Гид рассказывает об оборудовании у бродильных танков</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-07.jpg" alt="Квеври для ферментации на пивоварне" />
+                    <figcaption>Квеври для ферментации на пивоварне</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-08.jpg" alt="Группа с пивом на экскурсии по пивоварне" />
+                    <figcaption>Группа с пивом на экскурсии по пивоварне</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-09.jpg" alt="Оценка аромата хмеля на пивоварне" />
+                    <figcaption>Оценка аромата хмеля на пивоварне</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-02.jpg" alt="Цех пивоварни — бродильные танки и оборудование" />
+                    <figcaption>Цех пивоварни — бродильные танки и оборудование</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/brewery/tour-brewery-10.jpg" alt="Отдых на территории пивоварни" />
+                    <figcaption>Отдых на территории пивоварни</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="carousel-next" aria-label="Следующее фото">›</button>
+              </div>
+              <div class="tour-main-text">
+                <div class="card-header">
+                  <h3>
+                    Пиво как искусство: экскурсия на крафтовую пивоварню с
+                    дегустацией
+                  </h3>
+                  <p class="card-subtitle">Пивоварня</p>
+                </div>
+                <p class="card-lead">
+                  До переезда в Грузию я работала 11 лет на крупном пивоваренном
+                  производстве инженером-микробиологом, благодаря чему изучила
+                  процессы и оборудование пивоварения изнутри. Расскажу о пиве с разных ракурсов, традициях, технологии. Попробуем неповторимое пиво, услышим жизненные истории пивовара и посетим бункер.
+                </p>
+                <p>
+                  Пивоварня работает с малыми партиями и экспериментирует со вкусами, поэтому в ассортименте — до 90 авторских сортов, многие из которых невозможно попробовать больше нигде.
+                </p>
+              </div>
+            </div>
+            <div class="tour-booking">
+              <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Заказать экскурсию</a>
+            </div>
+            <details class="tour-details">
+              <summary>Подробнее о маршруте и деталях</summary>
+              <div class="card-columns">
+                <div>
+                  <h4>Вы увидите</h4>
+                  <ul>
+                    <li>Полный цикл производства пива.</li>
+                    <li>Разберетесь в сырье, материалах и их особенностях.</li>
+                    <li>Оборудование — от дробилки до линии розлива.</li>
+                    <li>Истории от пивовара и разрушение мифов.</li>
+                    <li>Секреты крафтового пивоварения в Грузии.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Вы узнаете</h4>
+                  <ul>
+                    <li>Как варится крафтовое пиво — от зерна до бокала.</li>
+                    <li>Чем отличается крафт от масс-маркета.</li>
+                    <li>Историю пивоваренных традиций в Грузии.</li>
+                    <li>Как влияют ингредиенты на вкус и аромат.</li>
+                    <li>
+                      Как проходит брожение и зачем нужны бродильные танки.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Дегустация</h4>
+                  <ul>
+                    <li>Пиво прямо из бродильного танка.</li>
+                    <li>3–4 сорта пива и 4–5 видов наливки.</li>
+                    <li>Легкие закуски включены.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-grid">
+                <div>
+                  <h4>Уникальность</h4>
+                  <p>
+                    Подойдёт тем, кто любит крафтовое пиво и гастрономические впечатления, ищет нетуристические форматы и хочет изнутри понять, как рождается вкус пива — в живом общении с профессиональными пивоварами.
+                  </p>
+                </div>
+                <div>
+                  <h4>Организационные моменты</h4>
+                  <p>
+                    Экскурсия 18+<br>
+                    Продолжительность: 2,5 часа.<br>
+                    До пивоварни вы добираетесь самостоятельно (около 30 минут от центра).<br>
+                    На производство нельзя проносить еду и молочные продукты<br>
+                    Перед экскурсией рекомендую поесть и воздержаться от вождения авто
+                  </p>
+                </div>
+                <div>
+                  <h4>Стоимость</h4>
+                  <p>
+                    120 ₾ или 45 $/чел<br>
+                    Минимум 3 человека.<br>
+                    Группам от 5 человек — скидка 10%
+                  </p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <article class="card">
+            <div class="tour-main">
+              <div class="tour-cover-carousel carousel-3-4">
+                <button type="button" class="carousel-prev" aria-label="Предыдущее фото">‹</button>
+                <div class="carousel-track">
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-01.png" alt="Профессиональная дегустация кофе — Chemex, чашки и зёрна на столе" />
+                    <figcaption>Дегустация в формате cupping</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-02.png" alt="Упаковка зерна спешалти и чашка свежесваренного кофе" />
+                    <figcaption>Зёрна и чашка — знакомство с сортом</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-03.png" alt="Участница дегустации с бокалом кофе" />
+                    <figcaption>Камерная атмосфера</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-04.png" alt="Группа на дегустации спешалти-кофе в уютной кофейне" />
+                    <figcaption>Общение и дегустация</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-05.png" alt="Участник дегустации пробует аромат и вкус кофе" />
+                    <figcaption>Профессиональный подход к чашке</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-06.png" alt="Показ заваривания кофе в дриппере за стойкой кофейни" />
+                    <figcaption>Разбор заваривания и оборудования</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-07.png" alt="Эспрессо-машина — экстракция в чашки на весах" />
+                    <figcaption>Точная экстракция эспрессо</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-08.png" alt="Разлив кофе из сервера в дегустационные чашки" />
+                    <figcaption>От заваривания до дегустации</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-09.png" alt="Заваривание pour-over: чайник и дриппер V60" />
+                    <figcaption>Pour-over вручную</figcaption>
+                  </figure>
+                  <figure class="carousel-slide">
+                    <img src="images/coffee/tour-coffee-10.png" alt="Обжаренные зёрна в профессиональном каппинг-трее" />
+                    <figcaption>Зёрна перед чашкой</figcaption>
+                  </figure>
+                </div>
+                <button type="button" class="carousel-next" aria-label="Следующее фото">›</button>
+              </div>
+              <div class="tour-main-text">
+                <div class="card-header">
+                  <h3>
+                    Дегустация спешалти-кофе в Старом городе
+                  </h3>
+                  <p class="card-subtitle">Кофейня в историческом центре</p>
+                </div>
+                <p class="card-lead">
+                  Выпить чашечку хорошего кофе в уютной кофейне, познакомиться с обжарщиками, которые живут своим делом, и открыть для себя мир спешалти-кофе. В небольшой компании вы узнаете, как формируется вкус кофе, и попробуете профессиональную дегустацию.
+                </p>
+              </div>
+            </div>
+            <div class="tour-booking">
+              <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Записаться на дегустацию</a>
+            </div>
+            <details class="tour-details">
+              <summary>Подробнее о формате и деталях</summary>
+              <div class="card-columns">
+                <div>
+                  <h4>Темы встречи</h4>
+                  <ul>
+                    <li>В маленькой кофейне в Старом городе мы проведём камерную дегустацию спешалти-кофе.</li>
+                    <li>Это возможность попробовать несколько сортов кофе так, как это делают обжарщики и бариста, и научиться различать вкусы, ароматы и характер разных зёрен.</li>
+                    <li>В уютной обстановке кофейни вы познакомитесь с миром спешалти-кофе и узнаете, почему один кофе может напоминать ягоды или шоколад, а другой — цитрусы или цветы.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Что вас ждёт</h4>
+                  <ul>
+                    <li>Дегустация нескольких сортов спешалти-кофе из разных стран</li>
+                    <li>Знакомство с профессиональным методом дегустации</li>
+                    <li>Разговор о происхождении кофе, обработке и обжарке</li>
+                    <li>Обучение тому, как различать вкусовые ноты</li>
+                    <li>Дружеская атмосфера небольшой кофейни и общение с людьми, которые любят кофе</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Вы узнаете</h4>
+                  <ul>
+                    <li>Чем спешалти-кофе отличается от обычного</li>
+                    <li>Как формируется вкус кофе</li>
+                    <li>Почему один и тот же сорт может звучать по-разному</li>
+                    <li>Как научиться чувствовать вкусовые ноты</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-grid">
+                <div>
+                  <h4>Уникальность</h4>
+                  <ul>
+                    <li>Тем, кто хочет глубже понять кофе через живой разговор и практику</li>
+                    <li>Любителям спешалти и тем, кто только открывает для себя этот формат — в камерной группе и гостеприимной атмосфере</li>
+                    <li>Удобное расположение рядом с достопримечательностями</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Организационные моменты</h4>
+                  <p>
+                    Продолжительность: 1,5 ч<br>
+                    Небольшая группа — от 2 до 5 человек<br>
+                    Каждую субботу в 10:00 и в 14:00
+                  </p>
+                </div>
+                <div>
+                  <h4>Стоимость</h4>
+                  <p>70 ₾ или 27 $</p>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <div class="card card-custom-route">
+            <p class="card-lead">Разработка маршрута по вашему запросу</p>
+            <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer" class="booking-button">Обсудить маршрут</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="unique" class="section">
+        <div class="container">
+          <h2>Уникальность</h2>
+          <div class="text-block">
+            <p>
+              Что отличает мои экскурсии? Я стараюсь сделать их не только
+              информативными, но и личными, добавляя элементы нестандартного
+              подхода, а также с особым вниманием к гостям. Каждая экскурсия для
+              меня – это не просто работа, а возможность поделиться своей
+              любовью к этому месту, его истории и культуре.
+            </p>
+            <p>
+              Я живу в Тбилиси и знаю его изнутри: не только историю, но и ритм,
+              характер, контрасты. Архитектура, искусство, ландшафт и человеческие
+              истории для меня важнее сухих дат. Я умею соединять эпохи,
+              объяснять сложное простым языком и создавать ощущение, будто вы
+              приехали в гости к хорошему знакомому.
+            </p>
+            <p>
+              Благодаря инженерному образованию и чуткому подходу мои маршруты
+              продуманные, насыщенные, с вниманием к деталям, но не перегруженные.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section section-alt">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="reviews-carousel">
+          <button type="button" class="reviews-carousel-prev" aria-label="Предыдущие отзывы">‹</button>
+          <div class="reviews-carousel-track">
+            <blockquote class="review-card">
+              <p class="review-text">Огромное спасибо за прекрасную поездку! Невероятной красоты монастырь Давида. На мой взгляд, одна из самых недооцененных достопримечательностей Грузии. Завораживающие виды Гареджийской пустыни, прекрасный пикник с видом на марсианские пейзажи. И очень душевная атмосфера поездки.</p>
+              <footer class="review-author">— Ева, апрель 2025 · <a href="https://experience.tripster.ru/experience/73449/" target="_blank" rel="noreferrer">Отзыв с Tripster</a></footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">Любовь прекрасный рассказчик и очень приятный человек! Благодаря ей ознакомились с древней грузинской культурой, поездили по храмам разных периодов и даже увидели раскопки! Экскурсовод старалась сделать все для нашего комфорта, отвечала на все вопросы, подготовила вкусный пикник, после экскурсии накидала много рекомендации мест, которые можно посетить в Тбилиси! Т.к. мы были в первый раз нам это было очень актуально :) Если хотите культурно обогатиться легко и с интересом, то советую эту экскурсию, т.к. Любовь все расскажет как ваш хороший знакомый, к которому вы приехали в гости изучать Грузию :) Благодарим за это мини-путешествие и возможность прочувствовать сердце города!</p>
+              <footer class="review-author">— Марина, август 2025 · <a href="https://experience.tripster.ru/experience/87246/" target="_blank" rel="noreferrer">Отзыв с Tripster</a></footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">Мне очень понравилась экскурсия, узнать историю зданий мимо которых ходишь каждый день очень было интересно, вас очень приятно и интересно слушать. Отличный темп (никуда не торопились, но и подолгу не задерживались на одном месте) — обязательно буду с вами на других маршрутах 👍</p>
+              <footer class="review-author">— Анна, февраль 2025 · Обзорная по Тбилиси</footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">17 сентября мы были на экскурсии в пещерный монастырь в Гареджийской пустыне. Это было восхитительно! Место настолько завораживает своей красотой, мощью, умиротворением. Любовь сделала все возможное, чтобы нам показать всю уникальность этого места. И большое спасибо за это ей!!! А «вишенкой на торте» был пикник на мраморных холмах. Любовь — вы чудесница!</p>
+              <footer class="review-author">— Татьяна, сентябрь 2025 · <a href="https://experience.tripster.ru/experience/73449/" target="_blank" rel="noreferrer">Отзыв с Tripster</a></footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">Мне понравился интерактив, вовлечение зрителей в экскурсию с помощью вопросов, загадок. Понравились истории про художников, интересные факты. Понравился общий вайб экскурсии.</p>
+              <footer class="review-author">— Дарья, январь 2026 · Обзорная по Тбилиси</footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">Заказали индивидуальную экскурсию из Тбилиси по Мцхете и окрестностям. Маршрут очень понравился. Люба провела по всем историческим местам древней столицы Грузии Мцхете. Все было интересно очень познавательно , душевно. Изюминкой маршрута был пикник на склоне холма с видом на живописную долину рядом с рекой Арагви. Рекомендуем Любовь как профессионального гида.</p>
+              <footer class="review-author">— Ахметов, октябрь 2025 · <a href="https://experience.tripster.ru/experience/87246/" target="_blank" rel="noreferrer">Отзыв с Tripster</a></footer>
+            </blockquote>
+            <blockquote class="review-card">
+              <p class="review-text">Давно хотели побывать в Грузии и увидеть её природную красоту. И вот наконец мечты сбылись! Величие гор и красота ландшафта завораживала и восхищала нас. Старинная архитектура монастырей окунула нас в историю. Прекрасно подобранный маршрут, комфортный автомобиль и безопасность в дороге. Особая благодарность Любе — очень хорошему и отзывчивому человеку, любящему свою работу и отдающемуся ей сполна. Благодаря ей у нас остались прекрасные впечатления об этой стране!</p>
+              <footer class="review-author">— Анастасия, август 2025 · <a href="https://experience.tripster.ru/experience/87246/" target="_blank" rel="noreferrer">Отзыв с Tripster</a></footer>
+            </blockquote>
+          </div>
+          <button type="button" class="reviews-carousel-next" aria-label="Следующие отзывы">›</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Тбилиси • Авторские экскурсии</p>
+          <div class="footer-contacts">
+            <a href="https://instagram.com/soulmate_travel_georgia" target="_blank" rel="noreferrer"
+              >Instagram</a
+            >
+            <a href="https://t.me/soulmate_travel_georgia" target="_blank" rel="noreferrer"
+              >Telegram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll('.tour-cover-carousel').forEach(function (carousel) {
+        var track = carousel.querySelector('.carousel-track');
+        var prev = carousel.querySelector('.carousel-prev');
+        var next = carousel.querySelector('.carousel-next');
+        if (!track || !prev || !next) return;
+        prev.addEventListener('click', function () {
+          track.scrollBy({ left: -track.offsetWidth, behavior: 'smooth' });
+        });
+        next.addEventListener('click', function () {
+          track.scrollBy({ left: track.offsetWidth, behavior: 'smooth' });
+        });
+      });
+
+      (function () {
+        var reviewsTrack = document.querySelector('.reviews-carousel-track');
+        var reviewsPrev = document.querySelector('.reviews-carousel-prev');
+        var reviewsNext = document.querySelector('.reviews-carousel-next');
+        if (!reviewsTrack || !reviewsPrev || !reviewsNext) return;
+        var card = reviewsTrack.querySelector('.review-card');
+        if (!card) return;
+        var scrollAmount = card.offsetWidth + 20;
+        reviewsPrev.addEventListener('click', function () {
+          reviewsTrack.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+        reviewsNext.addEventListener('click', function () {
+          reviewsTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+      })();
+    </script>
   </body>
 </html>
