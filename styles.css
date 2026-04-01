@@ -580,6 +580,7 @@ h4 {
 
   .hero-copy {
     max-width: 760px;
+    transform: translateY(18px);
   }
 
   .hero-nav {
