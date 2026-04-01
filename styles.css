@@ -44,7 +44,7 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(126, 74, 42, 0.18);
+  background: rgba(126, 74, 42, 0.28);
 }
 
 .hero .container {
@@ -70,6 +70,10 @@ img {
 }
 
 .hero-content {
+  max-width: 760px;
+}
+
+.hero-copy {
   max-width: 760px;
 }
 
@@ -556,13 +560,36 @@ h4 {
 }
 
 @media (min-width: 900px) {
+  .hero {
+    padding-bottom: 170px;
+  }
+
   .hero-top {
-    margin-bottom: 96px;
+    margin-bottom: 0;
   }
 
   .hero-content {
-    margin-top: 56px;
-    max-width: 920px;
+    margin-top: 0;
+    max-width: 1120px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 28px;
+    transform: translateY(96px);
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 12px;
+    margin-top: 0;
+    justify-content: end;
+    align-self: end;
+    max-width: none;
   }
 
   .hero h1 {
