@@ -41,12 +41,18 @@ img {
 }
 
 .hero::after {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(126, 74, 42, 0.18);
 }
 
 .hero .container {
   position: relative;
   z-index: 1;
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .eyebrow {
@@ -60,10 +66,16 @@ img {
 .hero-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.hero-content {
+  margin-top: auto;
+  padding-top: clamp(140px, 26vh, 260px);
+  max-width: 760px;
 }
 
 .hero-contacts,
@@ -92,14 +104,14 @@ img {
 .hero h1 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
   margin: 0 0 16px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.34);
 }
 
 .lead {
   font-size: 1.1rem;
   max-width: 680px;
   margin: 0 0 24px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
 .lead + .lead {
@@ -110,6 +122,7 @@ img {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .hero-nav a {
@@ -553,6 +566,14 @@ h4 {
   }
   .hero {
     padding: 60px 0 50px;
+  }
+
+  .hero .container {
+    min-height: 56vh;
+  }
+
+  .hero-content {
+    padding-top: clamp(96px, 18vh, 150px);
   }
 
   .hero h1 {
