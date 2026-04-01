@@ -235,6 +235,11 @@ h4 {
   aspect-ratio: 3 / 4;
 }
 
+.tour-cover-carousel.carousel-photo-format {
+  aspect-ratio: 3 / 4;
+  background: var(--color-card-soft);
+}
+
 .carousel-track {
   display: flex;
   height: 100%;
@@ -266,6 +271,10 @@ h4 {
   object-position: center;
   display: block;
   vertical-align: top;
+}
+
+.tour-cover-carousel.carousel-photo-format .carousel-slide img {
+  object-fit: contain;
 }
 
 .carousel-slide figcaption {
