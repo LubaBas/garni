@@ -50,9 +50,6 @@ img {
 .hero .container {
   position: relative;
   z-index: 1;
-  min-height: 66vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .eyebrow {
@@ -73,8 +70,6 @@ img {
 }
 
 .hero-content {
-  margin-top: auto;
-  padding-top: clamp(140px, 26vh, 260px);
   max-width: 760px;
 }
 
@@ -558,6 +553,22 @@ h4 {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+  .hero-top {
+    margin-bottom: 96px;
+  }
+
+  .hero-content {
+    margin-top: 56px;
+    max-width: 920px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 640px) {
