@@ -29,7 +29,7 @@ img {
 
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #b65c2a, #e28a4a);
+  background: linear-gradient(135deg, #275b8f, #6f96c8);
   color: #fff;
   padding: 80px 0 70px;
   overflow: hidden;
@@ -39,15 +39,16 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/hero-tbilisi.webp") 75% 45%/cover no-repeat;
-  opacity: 0.75;
+  background: url("file:///C:/Users/lubab/.cursor/projects/c-repos-garni/assets/c__Users_lubab_AppData_Roaming_Cursor_User_workspaceStorage_d7ef347520b2bee10fbc1724d5724ee6_images_yerevan-ararat-957fd7b3-7626-4240-b463-6a4c2a3392e8.png")
+    center center/cover no-repeat;
+  opacity: 0.88;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, rgba(182, 92, 42, 0.3), rgba(226, 138, 74, 0.25));
+  background: linear-gradient(120deg, rgba(106, 58, 28, 0.6), rgba(201, 132, 73, 0.28));
 }
 
 .hero .container {
@@ -98,12 +99,14 @@ img {
 .hero h1 {
   font-size: clamp(2.2rem, 4vw, 3.4rem);
   margin: 0 0 16px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
 }
 
 .lead {
   font-size: 1.1rem;
   max-width: 680px;
   margin: 0 0 24px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
 }
 
 .lead + .lead {
