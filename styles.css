@@ -603,6 +603,11 @@ h4 {
   .reviews-carousel .review-card {
     flex: 0 0 100%;
   }
+
+  .hero::after {
+    background: rgba(82, 48, 30, 0.42);
+  }
+
   .hero {
     padding: 60px 0 50px;
   }
