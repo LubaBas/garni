@@ -44,7 +44,13 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(126, 74, 42, 0.28);
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(40, 28, 22, 0.38) 0%,
+    rgba(22, 16, 12, 0.5) 100%
+  );
 }
 
 .hero .container {
@@ -605,7 +611,11 @@ h4 {
   }
 
   .hero::after {
-    background: rgba(82, 48, 30, 0.42);
+    background: linear-gradient(
+      to bottom,
+      rgba(32, 22, 18, 0.44) 0%,
+      rgba(18, 12, 10, 0.56) 100%
+    );
   }
 
   .hero {
