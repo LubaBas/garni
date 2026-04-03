@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #1b1b1b;
+  color: #453a34;
   background: #f9f1e6;
 }
 
@@ -176,18 +176,19 @@ img {
 h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   margin-bottom: 24px;
-  color: #8f4a24;
+  color: #b85c36;
 }
 
 h3 {
   font-size: clamp(1.3rem, 2.5vw, 1.7rem);
   margin: 0 0 6px;
+  color: #6b5346;
 }
 
 h4 {
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #8f4a24;
+  color: #8f7567;
 }
 
 .text-block p {
@@ -235,7 +236,7 @@ h4 {
 
 .card-subtitle {
   margin: 0;
-  color: #9a6b4a;
+  color: #a67d68;
   font-weight: 600;
 }
 
@@ -390,7 +391,7 @@ h4 {
 .tour-details summary {
   cursor: pointer;
   font-weight: 600;
-  color: #8f4a24;
+  color: #8f7567;
   padding: 6px 0;
   list-style: none;
 }
@@ -403,7 +404,7 @@ h4 {
   content: "+";
   display: inline-block;
   width: 20px;
-  color: #8f4a24;
+  color: #8f7567;
 }
 
 .tour-details[open] summary::before {
