@@ -202,6 +202,16 @@ h4 {
   grid-template-columns: minmax(220px, 320px) 1fr;
 }
 
+.about-copy h2 {
+  margin-top: 0;
+}
+
+@media (min-width: 641px) {
+  .about-grid {
+    align-items: end;
+  }
+}
+
 .about-photo img {
   border-radius: 18px;
   width: 100%;
@@ -795,6 +805,7 @@ h4 {
 
   .about-grid {
     grid-template-columns: 1fr;
+    align-items: start;
   }
 
   .tour-main {
