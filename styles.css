@@ -232,6 +232,10 @@ h4 {
   margin-bottom: 0;
 }
 
+.tours-slot-empty {
+  display: none;
+}
+
 .card-custom-route {
   text-align: center;
 }
@@ -242,6 +246,20 @@ h4 {
 
 .card-header {
   margin-bottom: 16px;
+}
+
+.card-title-line {
+  display: block;
+}
+
+.card-title-tagline {
+  display: block;
+  margin-top: 0.4em;
+  font-size: clamp(0.92rem, 2.1vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.35;
+  color: #8f7567;
+  max-width: 36em;
 }
 
 .card-subtitle {
@@ -523,6 +541,17 @@ h4 {
   background: rgba(184, 92, 54, 0.65);
 }
 
+.info-card .info-card-aside {
+  margin: 0.65em 0 0.35em;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #453a34;
+}
+
+.info-card .info-card-aside:first-of-type {
+  margin-top: 0.45em;
+}
+
 .photo-grid {
   display: flex;
   gap: 16px;
@@ -758,6 +787,15 @@ h4 {
 
   .tours-pair .tour-main {
     grid-template-columns: 1fr;
+  }
+
+  .tours-slot-empty {
+    display: block;
+    min-height: 120px;
+    border: 2px dashed rgba(143, 74, 36, 0.16);
+    border-radius: 16px;
+    background: rgba(255, 247, 236, 0.4);
+    box-sizing: border-box;
   }
 }
 
