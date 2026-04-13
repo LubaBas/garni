@@ -206,10 +206,8 @@ h4 {
   margin-top: 0;
 }
 
-@media (min-width: 641px) {
-  .about-grid {
-    align-items: end;
-  }
+.about-copy h2:not(:first-child) {
+  margin-top: 32px;
 }
 
 .about-photo img {
@@ -218,6 +216,31 @@ h4 {
   height: auto;
   object-fit: cover;
   box-shadow: 0 14px 30px rgba(33, 37, 41, 0.18);
+  display: block;
+}
+
+@media (min-width: 641px) {
+  .about-grid {
+    align-items: stretch;
+    grid-template-columns: minmax(300px, 0.54fr) 1fr;
+    gap: 32px;
+  }
+
+  .about-photo {
+    min-height: 0;
+    margin-inline: 18px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 30px rgba(33, 37, 41, 0.18);
+  }
+
+  .about-photo img {
+    height: 100%;
+    min-height: 0;
+    object-position: center 22%;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }
 
 .card {
