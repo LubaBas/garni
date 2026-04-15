@@ -165,6 +165,12 @@ img {
   color: #a34d24;
 }
 
+@media (max-width: 899px) {
+  .hero-nav a[href="#unique"] {
+    display: none;
+  }
+}
+
 .section {
   padding: 60px 0;
 }
