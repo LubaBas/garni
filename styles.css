@@ -262,7 +262,7 @@ h4 {
 }
 
 .card-custom-route {
-  align-self: start;
+  align-self: stretch;
   min-height: 0;
   text-align: center;
   padding: 18px 20px;
@@ -886,21 +886,23 @@ h4 {
     grid-template-columns: 1fr;
   }
 
-  .tours-pair > .card-custom-route {
-    grid-column: 1 / -1;
-    max-width: 38rem;
-    margin-inline: auto;
+  /* в одной строке с последней экскурсией: содержимое по вертикали по центру карточки */
+  .tours-pair > .card.card-custom-route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tours-pair > .card-custom-route .card-custom-route-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+    align-items: stretch;
+    gap: 14px 16px;
+    flex: 0 0 auto;
     width: 100%;
   }
 
-  .card-custom-route-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 36%) minmax(0, 1fr);
-    align-items: stretch;
-    gap: 20px 26px;
-  }
-
-  .card-custom-route-media {
+  .tours-pair > .card-custom-route .card-custom-route-media {
     width: 100%;
     max-height: none;
     aspect-ratio: unset;
@@ -909,29 +911,40 @@ h4 {
     border-radius: 14px;
   }
 
-  .card-custom-route-media img {
+  .tours-pair > .card-custom-route .card-custom-route-media img {
     width: 100%;
     height: 100%;
-    min-height: 12rem;
+    min-height: 9.5rem;
     max-height: none;
     object-fit: cover;
     object-position: 26% 40%;
   }
 
-  .card-custom-route-inner {
+  .tours-pair > .card-custom-route .card-custom-route-inner {
     align-items: flex-start;
     text-align: left;
-    gap: 12px;
+    gap: 10px;
+    flex: 0 0 auto;
   }
 
-  .card-custom-route .card-header,
-  .card-custom-route .custom-route-list {
+  .tours-pair > .card-custom-route .card-header,
+  .tours-pair > .card-custom-route .custom-route-list {
     text-align: left;
     max-width: none;
   }
 
-  .card-custom-route .tour-booking {
+  .tours-pair > .card-custom-route .tour-booking {
     align-self: flex-start;
+  }
+
+  .tours-pair > .card-custom-route .card-header h3 {
+    font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+  }
+
+  .tours-pair > .card-custom-route .custom-route-list li {
+    font-size: 0.88rem;
+    line-height: 1.42;
+    margin-bottom: 8px;
   }
 }
 
