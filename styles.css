@@ -282,7 +282,8 @@ h4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 26% 38%;
+  /* мобильная ширина: верх кадра (небо, Арарат), горизонт — кресло слева */
+  object-position: 26% 0%;
 }
 
 .card-custom-route-inner {
