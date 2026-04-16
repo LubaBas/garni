@@ -70,7 +70,9 @@
         <div class="container">
           <h2>Мои экскурсии</h2>
 
-          <div class="tours-pair">
+          <div class="tours-list-carousel">
+            <button type="button" class="tours-list-carousel-prev" aria-label="Предыдущие экскурсии">‹</button>
+            <div class="tours-list-carousel-track">
           <article class="card">
             <div class="tour-main">
               <div class="tour-cover-carousel carousel-photo-format">
@@ -139,9 +141,6 @@
                 </p>
               </div>
             </div>
-            <div class="tour-booking">
-              <a href="https://t.me/AnywayWeWalk_Bot?start=tour1" target="_blank" rel="noreferrer" class="booking-button">Забронировать</a>
-            </div>
             <details class="tour-details">
               <summary>Подробнее о маршруте и деталях</summary>
               <div class="card-columns">
@@ -189,6 +188,9 @@
                 </div>
               </div>
             </details>
+            <div class="tour-booking">
+              <a href="https://t.me/AnywayWeWalk_Bot?start=tour1" target="_blank" rel="noreferrer" class="booking-button">Забронировать</a>
+            </div>
           </article>
 
           <article class="card">
@@ -666,6 +668,10 @@
             </details>
           </article>
 
+            </div>
+            <button type="button" class="tours-list-carousel-next" aria-label="Следующие экскурсии">›</button>
+          </div>
+
           <article class="card card-custom-route">
             <div class="card-custom-route-layout">
               <div class="card-custom-route-media">
@@ -692,8 +698,6 @@
               </div>
             </div>
           </article>
-
-          </div>
 
         </div>
       </section>
@@ -824,6 +828,19 @@
           reviewsTrack.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
       })();
+
+      document.querySelectorAll('.tours-list-carousel').forEach(function (root) {
+        var track = root.querySelector('.tours-list-carousel-track');
+        var prev = root.querySelector('.tours-list-carousel-prev');
+        var next = root.querySelector('.tours-list-carousel-next');
+        if (!track || !prev || !next) return;
+        prev.addEventListener('click', function () {
+          track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+        });
+        next.addEventListener('click', function () {
+          track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+        });
+      });
     </script>
   </body>
 </html>
