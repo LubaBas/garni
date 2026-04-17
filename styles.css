@@ -689,26 +689,28 @@ h4 {
   transform: scale(1.02);
 }
 
+/* мобильная лента: карточки экскурсий столбиком (прокрутка страницы сверху вниз) */
 .tours-list-carousel {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 12px 16px;
+  display: block;
   width: 100%;
   max-width: 100%;
 }
 
+.tours-list-carousel-prev,
+.tours-list-carousel-next {
+  display: none;
+}
+
 .tours-list-carousel-track {
   display: flex;
+  flex-direction: column;
   gap: 24px;
   width: 100%;
   min-width: 0;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  overflow: visible;
+  scroll-snap-type: none;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding: 0 0 20px;
+  padding: 0 0 4px;
   box-sizing: border-box;
 }
 
@@ -721,21 +723,19 @@ h4 {
   flex-direction: column;
   align-items: stretch;
   gap: 16px;
-  flex: 0 0 100%;
+  flex: none;
+  width: 100%;
   min-width: 0;
   max-width: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   margin-bottom: 0;
 }
 
-/* верх карточки растягивается — «Подробнее» и кнопка на одной линии у всех слайдов в ряду */
 .tours-list-carousel-track > .card .tour-main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 16px;
-  flex: 1 1 auto;
+  flex: none;
   min-height: 0;
 }
 
@@ -763,40 +763,9 @@ h4 {
   margin-inline: auto;
 }
 
-.tours-list-carousel-prev,
-.tours-list-carousel-next {
-  flex-shrink: 0;
-  justify-self: center;
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: rgba(143, 74, 36, 0.9);
-  color: #fff;
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-}
-
 .tours-list-carousel-prev:hover,
 .tours-list-carousel-next:hover {
   background: #8f4a24;
-}
-
-@media (max-width: 520px) {
-  .tours-list-carousel {
-    gap: 8px 10px;
-  }
-
-  .tours-list-carousel-prev,
-  .tours-list-carousel-next {
-    width: 48px;
-    height: 48px;
-    font-size: 1.75rem;
-  }
 }
 
 /* карточка «индивидуальный маршрут» — под каруселью экскурсий, не внутри ленты */
@@ -1073,6 +1042,45 @@ h4 {
     line-height: 1.15;
   }
 
+  /* горизонтальная карусель экскурсий */
+  .tours-list-carousel {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px 16px;
+  }
+
+  .tours-list-carousel-prev,
+  .tours-list-carousel-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    justify-self: center;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(143, 74, 36, 0.9);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  .tours-list-carousel-track {
+    flex-direction: row;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0 0 20px;
+  }
+
   /* в карусели на экран помещается ~2 карточки */
   .tours-list-carousel-track > .card {
     flex: 0 0 calc((100% - 24px) / 2);
@@ -1080,10 +1088,14 @@ h4 {
     max-width: none;
     margin-bottom: 0;
     gap: 18px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .tours-list-carousel-track > .card .tour-main {
     gap: 18px;
+    flex: 1 1 auto;
+    min-height: 0;
   }
 
   .tours-list-carousel-track .tour-main-text .card-lead {
@@ -1091,7 +1103,19 @@ h4 {
     line-height: 1.55;
     margin-top: 0.35rem;
   }
+}
 
+@media (min-width: 900px) and (max-width: 1040px) {
+  .tours-list-carousel {
+    gap: 8px 10px;
+  }
+
+  .tours-list-carousel-prev,
+  .tours-list-carousel-next {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 640px) {
