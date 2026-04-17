@@ -205,15 +205,18 @@ h4 {
   display: grid;
   gap: 24px;
   align-items: start;
-  grid-template-columns: minmax(220px, 320px) 1fr;
+  grid-template-columns: minmax(240px, 360px) 1fr;
 }
 
-.about-copy h2 {
+#about .about-copy h2 {
   margin-top: 0;
+  font-size: clamp(1.45rem, 2.35vw, 1.95rem);
+  margin-bottom: 18px;
+  line-height: 1.22;
 }
 
-.about-copy h2:not(:first-child) {
-  margin-top: 32px;
+#about .about-copy h2:not(:first-child) {
+  margin-top: 22px;
 }
 
 .about-photo img {
@@ -227,25 +230,42 @@ h4 {
 
 @media (min-width: 641px) {
   .about-grid {
-    align-items: stretch;
-    grid-template-columns: minmax(300px, 0.54fr) 1fr;
-    gap: 32px;
+    /* одна высота строки = max(фото, текст); блоки по центру по вертикали */
+    align-items: center;
+    grid-template-columns: minmax(365px, 0.78fr) minmax(0, 1fr);
+    gap: 32px 40px;
   }
 
+  /* фото в пропорции файла (2:3), шире колонка */
   .about-photo {
-    min-height: 0;
-    margin-inline: 18px;
+    margin-inline: 12px;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 14px 30px rgba(33, 37, 41, 0.18);
+    aspect-ratio: 2 / 3;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
   }
 
   .about-photo img {
+    width: 100%;
     height: 100%;
     min-height: 0;
-    object-position: center 22%;
+    object-fit: cover;
+    object-position: center center;
     border-radius: 0;
     box-shadow: none;
+  }
+
+  .about-copy {
+    min-width: 0;
+    max-width: 40rem;
+    line-height: 1.62;
+  }
+
+  .about-copy .text-block p {
+    line-height: inherit;
   }
 }
 
