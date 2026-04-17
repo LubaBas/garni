@@ -689,21 +689,25 @@ h4 {
 }
 
 .tours-list-carousel {
-  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px 16px;
   width: 100%;
-  overflow: hidden;
+  max-width: 100%;
 }
 
 .tours-list-carousel-track {
   display: flex;
   gap: 24px;
   width: 100%;
+  min-width: 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding: 0 48px 20px;
+  padding: 0 0 20px;
   box-sizing: border-box;
 }
 
@@ -755,22 +759,20 @@ h4 {
 
 .tours-list-carousel-prev,
 .tours-list-carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 44px;
-  height: 44px;
+  flex-shrink: 0;
+  justify-self: center;
+  width: 56px;
+  height: 56px;
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: rgba(143, 74, 36, 0.85);
+  background: rgba(143, 74, 36, 0.9);
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1;
   cursor: pointer;
   transition: background 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 .tours-list-carousel-prev:hover,
@@ -778,12 +780,17 @@ h4 {
   background: #8f4a24;
 }
 
-.tours-list-carousel-prev {
-  left: 4px;
-}
+@media (max-width: 520px) {
+  .tours-list-carousel {
+    gap: 8px 10px;
+  }
 
-.tours-list-carousel-next {
-  right: 4px;
+  .tours-list-carousel-prev,
+  .tours-list-carousel-next {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+  }
 }
 
 /* карточка «индивидуальный маршрут» — под каруселью экскурсий, не внутри ленты */
