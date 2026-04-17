@@ -731,13 +731,23 @@ h4 {
 
 /* верх карточки растягивается — «Подробнее» и кнопка на одной линии у всех слайдов в ряду */
 .tours-list-carousel-track > .card .tour-main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
   flex: 1 1 auto;
   min-height: 0;
+}
+
+.tours-list-carousel-track > .card .tour-main-text {
+  max-width: none;
+  min-width: 0;
 }
 
 .tours-list-carousel-track > .card .tour-details {
   margin-top: 0;
   flex-shrink: 0;
+  min-width: 0;
 }
 
 .tours-list-carousel-track > .card .tour-booking {
@@ -746,25 +756,11 @@ h4 {
   flex-shrink: 0;
 }
 
-/* первая экскурсия: фото, под ним текст */
-.tours-list-carousel-track > .card:first-child .tour-main {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
+/* как первая экскурсия: фото сверху на 94%, под ним текст */
 .tours-list-carousel-track > .card .tour-main > .tour-cover-carousel {
   width: 94%;
   max-width: 94%;
   margin-inline: auto;
-}
-
-.tours-list-carousel-track > .card:first-child .tour-main-text {
-  max-width: none;
-}
-
-.tours-list-carousel-track > .card:first-child .tour-details {
-  min-width: 0;
 }
 
 .tours-list-carousel-prev,
@@ -1086,18 +1082,8 @@ h4 {
     gap: 18px;
   }
 
-  .tours-list-carousel-track > .card:first-child .tour-main {
+  .tours-list-carousel-track > .card .tour-main {
     gap: 18px;
-  }
-
-  .tours-list-carousel-track .tour-main {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    align-items: stretch;
-  }
-
-  .tours-list-carousel-track .tour-main-text {
-    min-width: 0;
   }
 
   .tours-list-carousel-track .tour-main-text .card-lead {
