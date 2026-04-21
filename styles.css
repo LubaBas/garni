@@ -165,12 +165,6 @@ img {
   color: #a34d24;
 }
 
-@media (max-width: 899px) {
-  .hero-nav a[href="#unique"] {
-    display: none;
-  }
-}
-
 .section {
   padding: 60px 0;
 }
@@ -1038,13 +1032,14 @@ h4 {
     margin-bottom: 0;
   }
 
+  /* вторая колонка тянется до края — кнопки прижаты вправо (линия «Отзывы» как у правого края) */
   .hero-content {
     margin-top: auto;
     padding-top: clamp(32px, 8vh, 100px);
     max-width: 1120px;
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: auto 1fr;
     align-items: last baseline;
     gap: 28px;
   }
@@ -1058,7 +1053,7 @@ h4 {
     flex-wrap: nowrap;
     gap: 10px;
     margin-top: 0;
-    margin-left: auto;
+    justify-self: end;
     justify-content: flex-end;
     align-items: center;
     max-width: none;
