@@ -1075,7 +1075,7 @@ h4 {
     line-height: 1.15;
   }
 
-  /* горизонтальная карусель экскурсий */
+  /* лента экскурсий: стрелки по центру колонки, пока все «Подробнее» закрыты */
   .tours-list-carousel {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
@@ -1090,6 +1090,10 @@ h4 {
     justify-content: center;
     flex-shrink: 0;
     justify-self: center;
+    align-self: center;
+    position: static;
+    top: auto;
+    z-index: auto;
     width: 56px;
     height: 56px;
     padding: 0;
@@ -1102,6 +1106,19 @@ h4 {
     cursor: pointer;
     transition: background 0.2s ease;
     box-shadow: none;
+  }
+
+  /* раскрыт любой details в треке — «езда» стрелок по скроллу, сетка от верха (нужен :has) */
+  .tours-list-carousel:has(.tours-list-carousel-track details[open]) {
+    align-items: start;
+  }
+
+  .tours-list-carousel:has(.tours-list-carousel-track details[open]) .tours-list-carousel-prev,
+  .tours-list-carousel:has(.tours-list-carousel-track details[open]) .tours-list-carousel-next {
+    position: sticky;
+    top: max(12px, calc(50vh - 28px));
+    align-self: start;
+    z-index: 5;
   }
 
   /* одинаковая высота карточек в ряду; низ — «Подробнее» и кнопка (верх блока tour-main без flex-grow) */
@@ -1156,6 +1173,11 @@ h4 {
     width: 48px;
     height: 48px;
     font-size: 1.75rem;
+  }
+
+  .tours-list-carousel:has(.tours-list-carousel-track details[open]) .tours-list-carousel-prev,
+  .tours-list-carousel:has(.tours-list-carousel-track details[open]) .tours-list-carousel-next {
+    top: max(12px, calc(50vh - 24px));
   }
 
   #tours .tours-custom-route-align .tours-carousel-align-spacer {
