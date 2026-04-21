@@ -1104,8 +1104,10 @@ h4 {
     box-shadow: none;
   }
 
+  /* одинаковая высота карточек в ряду; низ — «Подробнее» и кнопка (верх блока tour-main без flex-grow) */
   .tours-list-carousel-track {
     flex-direction: row;
+    align-items: stretch;
     gap: 24px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1117,6 +1119,7 @@ h4 {
   /* в карусели на экран помещается ~2 карточки */
   .tours-list-carousel-track > .card {
     flex: 0 0 calc((100% - 24px) / 2);
+    align-self: stretch;
     min-width: 0;
     max-width: none;
     margin-bottom: 0;
@@ -1127,8 +1130,13 @@ h4 {
 
   .tours-list-carousel-track > .card .tour-main {
     gap: 18px;
-    flex: 1 1 auto;
+    flex: none;
     min-height: 0;
+  }
+
+  /* прижимает summary + раскрытый текст и к блоку ниже остаётся кнопка — внизу карточки */
+  .tours-list-carousel-track > .card .tour-details {
+    margin-top: auto;
   }
 
   .tours-list-carousel-track .tour-main-text .card-lead {
