@@ -781,6 +781,10 @@ h4 {
   width: 94%;
   max-width: 94%;
   margin-inline: auto;
+  border-radius: 14px;
+  box-shadow:
+    0 14px 34px rgba(60, 32, 14, 0.2),
+    0 0 0 1px rgba(143, 74, 36, 0.16);
 }
 
 .tours-list-carousel-prev:hover,
@@ -788,9 +792,9 @@ h4 {
   background: #8f4a24;
 }
 
-/* карточка «индивидуальный маршрут» — под каруселью экскурсий, не внутри ленты */
+/* карточки экскурсий и «индивидуальный маршрут» — одна плашка */
+#tours .tours-list-carousel-track > .card,
 #tours .card.card-custom-route {
-  margin-top: 32px;
   padding: 22px 24px;
   background: linear-gradient(165deg, #fffdfb 0%, #f6efe8 48%, #e8dfd6 100%);
   border: 1px solid rgba(143, 74, 36, 0.28);
@@ -801,44 +805,63 @@ h4 {
     inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
+#tours .tours-custom-route-align {
+  margin-top: 32px;
+}
+
+#tours .tours-custom-route-align .tours-carousel-align-spacer {
+  display: none;
+}
+
+#tours .tours-list-carousel-track > .card .card-header h3,
 #tours .card.card-custom-route .card-header h3 {
   color: #4a2814;
 }
 
+/* в блоке «Мои экскурсии» — как tour-cover: 3:4, рамка */
 #tours .card.card-custom-route .card-custom-route-media {
   border-radius: 14px;
+  aspect-ratio: 3 / 4;
   box-shadow:
     0 14px 34px rgba(60, 32, 14, 0.2),
     0 0 0 1px rgba(143, 74, 36, 0.16);
 }
 
 @media (min-width: 720px) {
+  #tours .tours-list-carousel-track > .card,
   #tours .card.card-custom-route {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: none;
     padding: 26px clamp(22px, 3.2vw, 40px);
   }
+}
 
+@media (min-width: 900px) {
+  #tours .tours-list-carousel.tours-custom-route-align {
+    align-items: start;
+  }
+
+  #tours .tours-custom-route-align .tours-carousel-align-spacer {
+    display: block;
+    width: 56px;
+    min-width: 56px;
+  }
+
+  /* фото слева (как доля колонки в карточке тура), текст справа */
   #tours .card.card-custom-route .card-custom-route-layout {
     display: grid;
-    grid-template-columns: minmax(225px, 0.94fr) minmax(240px, 1.06fr);
+    grid-template-columns: minmax(200px, 0.42fr) minmax(0, 1fr);
     align-items: center;
-    gap: clamp(22px, 3.5vw, 40px) clamp(24px, 4vw, 48px);
+    gap: clamp(22px, 3.5vw, 36px) clamp(22px, 4vw, 44px);
     width: 100%;
-    max-width: none;
-    margin-inline: 0;
   }
 
   #tours .card.card-custom-route .card-custom-route-media {
     width: 100%;
     max-width: 100%;
     margin-inline: 0;
-    aspect-ratio: 3 / 2;
-    align-self: stretch;
+    align-self: center;
+    aspect-ratio: 3 / 4;
     min-height: 0;
-    border-radius: 14px;
+    overflow: hidden;
   }
 
   #tours .card.card-custom-route .card-custom-route-media img {
@@ -853,7 +876,7 @@ h4 {
     align-items: flex-start;
     text-align: left;
     gap: 14px;
-    flex: 0 0 auto;
+    min-width: 0;
     max-width: none;
   }
 
@@ -1135,6 +1158,11 @@ h4 {
     width: 48px;
     height: 48px;
     font-size: 1.75rem;
+  }
+
+  #tours .tours-custom-route-align .tours-carousel-align-spacer {
+    width: 48px;
+    min-width: 48px;
   }
 }
 
