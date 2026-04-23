@@ -27,12 +27,12 @@ img {
   margin: 0 auto;
 }
 
-/* фон: cover + якорь по вертикали ~52% — горы и тёмный низ в кадре под текст */
+/* фон: cover, вертикальный якорь ~64% */
 .hero {
   position: relative;
   background-color: #275b8f;
   background:
-    url("./images/ararat%201-1.jpg") center 52% / cover no-repeat;
+    url("./images/ararat%202.jpg") center 64% / cover no-repeat;
   color: #fff;
   padding: 80px 0 70px;
   overflow: hidden;
@@ -53,11 +53,12 @@ img {
   pointer-events: none;
   background: linear-gradient(
     to bottom,
-    rgba(20, 16, 14, 0) 0%,
-    rgba(20, 16, 14, 0) 40%,
-    rgba(18, 14, 12, 0.22) 62%,
-    rgba(14, 11, 9, 0.48) 82%,
-    rgba(10, 8, 7, 0.62) 100%
+    rgba(8, 7, 6, 0) 0%,
+    rgba(8, 7, 6, 0) 34%,
+    rgba(7, 6, 5, 0.12) 48%,
+    rgba(6, 5, 4, 0.35) 65%,
+    rgba(5, 4, 3, 0.62) 82%,
+    rgba(4, 3, 2, 0.82) 100%
   );
 }
 
@@ -1192,11 +1193,12 @@ h4 {
   .hero::after {
     background: linear-gradient(
       to bottom,
-      rgba(20, 16, 14, 0) 0%,
-      rgba(20, 16, 14, 0) 32%,
-      rgba(18, 14, 12, 0.28) 55%,
-      rgba(12, 9, 8, 0.52) 78%,
-      rgba(8, 6, 5, 0.66) 100%
+      rgba(8, 7, 6, 0) 0%,
+      rgba(8, 7, 6, 0) 28%,
+      rgba(7, 6, 5, 0.18) 45%,
+      rgba(6, 5, 4, 0.42) 62%,
+      rgba(5, 4, 3, 0.68) 80%,
+      rgba(4, 3, 2, 0.88) 100%
     );
   }
 
