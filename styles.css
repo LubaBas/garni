@@ -27,10 +27,12 @@ img {
   margin: 0 auto;
 }
 
+/* фон: cover + якорь по вертикали ~52% — горы и тёмный низ в кадре под текст */
 .hero {
   position: relative;
   background-color: #275b8f;
-  background: url("./images/hero-yerevan.png") center center/cover no-repeat;
+  background:
+    url("./images/ararat%201-1.jpg") center 52% / cover no-repeat;
   color: #fff;
   padding: 80px 0 70px;
   overflow: hidden;
