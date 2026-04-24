@@ -181,6 +181,11 @@ h2 {
   color: #b85c36;
 }
 
+#tours .container > h2,
+#reviews .container > h2 {
+  text-align: center;
+}
+
 h3 {
   font-size: clamp(1.3rem, 2.5vw, 1.7rem);
   margin: 0 0 6px;
@@ -195,6 +200,35 @@ h4 {
 
 .text-block p {
   margin: 0 0 16px;
+}
+
+.bullet-list {
+  margin: 0 0 16px;
+  padding: 0;
+  padding-inline-start: 18px;
+  list-style-type: disc;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.bullet-list li {
+  margin: 0 0 10px;
+  padding: 0;
+  line-height: 1.48;
+  font-size: 0.95rem;
+}
+
+.bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
+.bullet-list li::marker {
+  color: #a67d68;
+}
+
+#about .about-copy .bullet-list li {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .about-grid {
@@ -329,27 +363,8 @@ h4 {
 }
 
 .card-custom-route .custom-route-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin: 0 auto;
   max-width: 38em;
-  text-align: center;
-}
-
-.card-custom-route .custom-route-list li {
-  margin: 0 0 10px;
-  padding: 0;
-  line-height: 1.48;
-  font-size: 0.95rem;
-}
-
-.card-custom-route .custom-route-list li:last-child {
-  margin-bottom: 0;
-}
-
-.card-custom-route .custom-route-list li::before {
-  content: "— ";
-  color: #a67d68;
 }
 
 .card-custom-route .tour-booking {
@@ -785,11 +800,11 @@ h4 {
   background: #8f4a24;
 }
 
-/* карточки экскурсий и «индивидуальный маршрут» — одна плашка */
+/* карточки в «Мои экскурсии»: одна плашка, сплошной фон */
 #tours .tours-list-carousel-track > .card,
 #tours .card.card-custom-route {
   padding: 22px 24px;
-  background: linear-gradient(165deg, #fffdfb 0%, #f6efe8 48%, #e8dfd6 100%);
+  background: #e8dfd6;
   border: 1px solid rgba(143, 74, 36, 0.28);
   border-radius: 20px;
   box-shadow: none;
@@ -900,12 +915,13 @@ h4 {
   display: flex;
   gap: 20px;
   width: 100%;
+  min-width: 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
-  padding: 0 24px 20px;
+  padding: 0 0 20px;
 }
 
 .reviews-carousel-track::-webkit-scrollbar {
@@ -921,35 +937,7 @@ h4 {
 
 .reviews-carousel-prev,
 .reviews-carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: rgba(143, 74, 36, 0.85);
-  color: #fff;
-  font-size: 1.6rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: background 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.reviews-carousel-prev:hover,
-.reviews-carousel-next:hover {
-  background: #8f4a24;
-}
-
-.reviews-carousel-prev {
-  left: 12px;
-}
-
-.reviews-carousel-next {
-  right: 12px;
+  display: none;
 }
 
 .review-card {
@@ -1159,6 +1147,50 @@ h4 {
     line-height: 1.55;
     margin-top: 0.35rem;
   }
+
+  /* отзывы: стрелки в боковых колонках, лента по центру — как у «Мои экскурсии» */
+  .reviews-carousel {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px 16px;
+    overflow: visible;
+  }
+
+  .reviews-carousel-prev,
+  .reviews-carousel-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    z-index: auto;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(143, 74, 36, 0.9);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    box-shadow: none;
+  }
+
+  .reviews-carousel-prev:hover,
+  .reviews-carousel-next:hover {
+    background: #8f4a24;
+  }
+
+  .reviews-carousel-track {
+    padding: 0 0 20px;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1040px) {
@@ -1168,6 +1200,13 @@ h4 {
 
   .tours-list-carousel-prev,
   .tours-list-carousel-next {
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+  }
+
+  .reviews-carousel-prev,
+  .reviews-carousel-next {
     width: 48px;
     height: 48px;
     font-size: 1.75rem;
