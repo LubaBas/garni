@@ -546,7 +546,7 @@ h4 {
   margin-top: 18px;
   border-radius: 12px;
   background: #fffaf3;
-  padding: 10px 14px 16px;
+  padding: 10px;
 }
 
 .tour-details summary {
@@ -574,6 +574,15 @@ h4 {
 
 .tour-details > *:not(summary) {
   margin-top: 16px;
+}
+
+.tour-details > .tour-booking:last-child {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.tours-list-carousel-track > .card .tour-details > .tour-booking:last-child {
+  margin-top: 20px;
 }
 
 .tour-details-intro {
@@ -604,7 +613,7 @@ h4 {
   background: #fff;
   border: 1px solid rgba(143, 74, 36, 0.18);
   border-radius: 12px;
-  padding: 16px 18px;
+  padding: 16px;
   box-shadow: 0 2px 12px rgba(143, 74, 36, 0.06);
   border-left: 4px solid rgba(184, 92, 54, 0.85);
 }
@@ -808,7 +817,7 @@ h4 {
 /* карточки в «Мои экскурсии»: одна плашка, сплошной фон */
 #tours .tours-list-carousel-track > .card,
 #tours .card.card-custom-route {
-  padding: 22px 24px;
+  padding: 22px;
   background: #e8dfd6;
   border: 1px solid rgba(143, 74, 36, 0.28);
   border-radius: 20px;
@@ -837,7 +846,7 @@ h4 {
 @media (min-width: 720px) {
   #tours .tours-list-carousel-track > .card,
   #tours .card.card-custom-route {
-    padding: 26px clamp(22px, 3.2vw, 40px);
+    padding: 26px;
   }
 }
 
