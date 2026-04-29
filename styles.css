@@ -792,11 +792,11 @@ h4 {
   flex-shrink: 0;
 }
 
-/* как первая экскурсия: фото сверху на 94%, под ним текст */
+/* фото на всю ширину текстового блока — общие края с заголовком и описанием */
 .tours-list-carousel-track > .card .tour-main > .tour-cover-carousel {
-  width: 94%;
-  max-width: 94%;
-  margin-inline: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 0;
   border-radius: 14px;
 }
 
