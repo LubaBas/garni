@@ -400,6 +400,11 @@ h4 {
   margin: 0 0 20px;
 }
 
+.tour-card-primary {
+  min-width: 0;
+  flex-shrink: 0;
+}
+
 .tour-main {
   display: grid;
   gap: 20px;
@@ -1107,10 +1112,10 @@ h4 {
     z-index: 5;
   }
 
-  /* одинаковая высота карточек в ряду; низ — «Подробнее» и кнопка (верх блока tour-main без flex-grow) */
+  /* карточки по высоте контента: при раскрытии details соседние «Забронировать» не сдвигаются (без stretch + margin-top:auto на паре) */
   .tours-list-carousel-track {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
     gap: 24px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1122,7 +1127,7 @@ h4 {
   /* в карусели на экран помещается ~2 карточки */
   .tours-list-carousel-track > .card {
     flex: 0 0 calc((100% - 24px) / 2);
-    align-self: stretch;
+    align-self: flex-start;
     min-width: 0;
     max-width: none;
     margin-bottom: 0;
@@ -1137,15 +1142,66 @@ h4 {
     min-height: 0;
   }
 
-  /* прижимает summary + раскрытый текст и к блоку ниже остаётся кнопка — внизу карточки */
+  /* верх карточки только по контенту */
+  .tours-list-carousel-track > .card > .tour-card-primary {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .tours-list-carousel-track > .card > .tour-card-primary .tour-main {
+    flex: 0 0 auto;
+    min-height: 0;
+  }
+
+  .tours-list-carousel-track > .card .tour-booking {
+    margin-top: 0;
+  }
+
   .tours-list-carousel-track > .card .tour-details {
-    margin-top: auto;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+  /* заголовок и второй ряд (подзаголовок / слоган) — раздельные минимумы, одинаковые между карточками */
+  .tours-list-carousel-track > .card .card-header h3 {
+    line-height: 1.22;
+  }
+
+  /* Ереван: заголовок без внутренних span */
+  .tours-list-carousel-track > .card .card-header h3:not(:has(.card-title-line)) {
+    min-height: calc(1.3rem * 1.22 * 2.5);
+    min-height: 2.5lh;
+  }
+
+  /* остальные туры: первая строка названия */
+  .tours-list-carousel-track > .card .card-header .card-title-line {
+    min-height: calc(1.3rem * 1.22 * 2.5);
+    min-height: 2.5lh;
+  }
+
+  /* Ереван: подзаголовок под h3 */
+  .tours-list-carousel-track > .card .card-header .card-subtitle {
+    min-height: calc(0.92rem * 1.35 * 2.25);
+    min-height: 2.25lh;
+    line-height: 1.35;
+    font-size: clamp(0.92rem, 2.1vw, 1.05rem);
+  }
+
+  /* слоган второй строкой внутри h3 — как у .card-title-tagline */
+  .tours-list-carousel-track > .card .card-header .card-title-tagline {
+    min-height: calc(0.92rem * 1.35 * 2.35);
+    min-height: 2.35lh;
   }
 
   .tours-list-carousel-track .tour-main-text .card-lead {
     font-size: 1.02rem;
     line-height: 1.55;
     margin-top: 0.35rem;
+    /* одинаковый минимум по числу строк у всех лидов (fallback без lh) */
+    min-height: calc(1.02rem * 1.55 * 8);
+    min-height: 8lh;
   }
 
   /* отзывы: стрелки в боковых колонках, лента по центру — как у «Мои экскурсии» */
