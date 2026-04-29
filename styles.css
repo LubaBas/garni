@@ -1303,14 +1303,13 @@ h4 {
 
   .hero {
     padding: 60px 0 50px;
+    min-height: min(70vh, 720px);
+    background-position: center center;
+    background-size: auto 350%;
   }
 
   .hero .container {
     min-height: 0;
-  }
-
-  .hero {
-    min-height: min(70vh, 720px);
   }
 
   .hero-content {
@@ -1320,6 +1319,7 @@ h4 {
   .hero h1 {
     font-size: 1.6rem;
     line-height: 1.2;
+    transform: translateY(-2.75rem);
   }
 
   .lead {
