@@ -612,11 +612,9 @@ h4 {
 
 .info-card {
   background: #fff;
-  border: 1px solid rgba(143, 74, 36, 0.18);
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 2px 12px rgba(143, 74, 36, 0.06);
-  border-left: 4px solid rgba(184, 92, 54, 0.85);
 }
 
 .info-card h4 {
